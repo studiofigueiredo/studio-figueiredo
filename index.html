@@ -2136,64 +2136,94 @@
       }
 
       /* ──────────────────────────────────────────
-         LIGHTBOX
+         LIGHTBOX — overlay criado e destruído dinamicamente
       ────────────────────────────────────────── */
-      var lightbox        = document.getElementById('lightbox');
-      var lightboxImg     = document.getElementById('lightboxImg');
-      var lightboxClose   = document.getElementById('lightboxClose');
-      var lightboxBackdrop = document.getElementById('lightboxBackdrop');
-      var lastFocused     = null;
+      var portfolioImgs = document.querySelectorAll('#portfolio .portfolio-item img');
 
-      function openLightbox(src, alt) {
-        if (!lightbox || !lightboxImg) return;
-        lastFocused = document.activeElement;
-        lightboxImg.src = src;
-        lightboxImg.alt = alt || '';
-        lightbox.classList.add('open');
-        document.body.style.overflow = 'hidden';
-        if (lightboxClose) lightboxClose.focus();
-      }
+      for (var m = 0; m < portfolioImgs.length; m++) {
+        portfolioImgs[m].addEventListener('click', function() {
+          var src = this.src;
+          var alt = this.alt || '';
 
-      function closeLightbox() {
-        if (!lightbox) return;
-        lightbox.classList.remove('open');
-        document.body.style.overflow = '';
-        // pequeno delay para evitar flash antes do fade
-        setTimeout(function() {
-          if (lightboxImg) lightboxImg.src = '';
-        }, 260);
-        if (lastFocused) lastFocused.focus();
-      }
+          // Overlay
+          var overlay = document.createElement('div');
+          overlay.style.cssText = [
+            'position:fixed', 'top:0', 'left:0',
+            'width:100vw', 'height:100vh',
+            'background:rgba(0,0,0,0.95)',
+            'z-index:9999',
+            'display:flex',
+            'align-items:center',
+            'justify-content:center',
+            'cursor:pointer'
+          ].join(';');
 
-      // Abrir ao clicar nos itens do portfólio
-      var portfolioItems = document.querySelectorAll('.portfolio-item');
-      for (var m = 0; m < portfolioItems.length; m++) {
-        portfolioItems[m].addEventListener('click', function() {
-          var img = this.querySelector('img');
-          if (img) openLightbox(img.src, img.alt);
+          // Imagem
+          var img = document.createElement('img');
+          img.src = src;
+          img.alt = alt;
+          img.style.cssText = [
+            'max-width:90vw',
+            'max-height:90vh',
+            'object-fit:contain',
+            'cursor:default',
+            'display:block'
+          ].join(';');
+
+          // Botão X
+          var btnClose = document.createElement('button');
+          btnClose.textContent = '×';
+          btnClose.setAttribute('aria-label', 'Fechar imagem');
+          btnClose.style.cssText = [
+            'position:absolute',
+            'top:20px',
+            'right:20px',
+            'color:#ffffff',
+            'font-size:32px',
+            'line-height:1',
+            'background:none',
+            'border:none',
+            'cursor:pointer',
+            'padding:8px',
+            'font-family:Arial,sans-serif'
+          ].join(';');
+
+          function removeOverlay() {
+            if (overlay.parentNode) {
+              overlay.parentNode.removeChild(overlay);
+            }
+            document.body.style.overflow = '';
+            document.removeEventListener('keydown', onKeydown);
+          }
+
+          function onKeydown(e) {
+            var key = e.key || e.keyCode;
+            if (key === 'Escape' || key === 'Esc' || key === 27) {
+              removeOverlay();
+            }
+          }
+
+          // Fechar ao clicar no overlay (fora da imagem)
+          overlay.addEventListener('click', removeOverlay);
+
+          // Impedir que clique na imagem feche o overlay
+          img.addEventListener('click', function(e) { e.stopPropagation(); });
+
+          // Fechar pelo botão X
+          btnClose.addEventListener('click', function(e) {
+            e.stopPropagation();
+            removeOverlay();
+          });
+
+          document.addEventListener('keydown', onKeydown);
+
+          overlay.appendChild(img);
+          overlay.appendChild(btnClose);
+          document.body.appendChild(overlay);
+          document.body.style.overflow = 'hidden';
+          btnClose.focus();
         });
       }
-
-      // Fechar pelo botão X
-      if (lightboxClose) {
-        lightboxClose.addEventListener('click', function(e) {
-          e.stopPropagation();
-          closeLightbox();
-        });
-      }
-
-      // Fechar ao clicar fora da imagem (backdrop)
-      if (lightboxBackdrop) {
-        lightboxBackdrop.addEventListener('click', closeLightbox);
-      }
-
-      // Fechar com Escape (adiciona ao listener existente no keydown)
-      document.addEventListener('keydown', function(e) {
-        var key = e.key || e.keyCode;
-        if ((key === 'Escape' || key === 'Esc' || key === 27) && lightbox && lightbox.classList.contains('open')) {
-          closeLightbox();
-        }
-      });
 
     })();
   </script>
