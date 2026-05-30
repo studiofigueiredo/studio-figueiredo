@@ -195,6 +195,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     width: 22px;
     height: 1.5px;
     background: var(--white);
+    transition: transform 0.28s ease, opacity 0.28s ease;
     transition: 0.3s;
     display: block;
   }
@@ -1485,6 +1486,82 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .wa-float { bottom: 1.25rem; right: 1.25rem; width: 52px; height: 52px; }
   }
 
+  /* ====================== MENU MOBILE ====================== */
+  .hamburger.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  .hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+  .hamburger.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: var(--black);
+    z-index: 490;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+  }
+
+  .mobile-menu.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .mobile-menu nav-mob-links {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem 0;
+    width: 100%;
+  }
+
+  .mobile-menu ul li {
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .mobile-menu ul li:first-child {
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .mobile-menu ul a {
+    display: block;
+    padding: 1.2rem 2rem;
+    font-size: 1.15rem;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    transition: color 0.2s;
+  }
+
+  .mobile-menu ul a:hover,
+  .mobile-menu ul a:active { color: var(--gold); }
+
+  .mob-cta-wrap {
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .mob-cta-wrap .btn-wa {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 1.1rem 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .mobile-menu { display: flex; }
+  }
+
   </style>
 </head>
 <body>
@@ -1518,6 +1595,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </nav>
+
+  <!-- MENU MOBILE -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#processo">Processo</a></li>
+      <li><a href="#diferenciais">Por que nós</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="https://wa.me/5514991515454?text=Ol%C3%A1%2C+vim+pelo+site+e+quero+saber+sobre+renderiza%C3%A7%C3%A3o+3D+para+meu+lan%C3%A7amento" target="_blank" rel="noopener" class="btn-wa">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.09 1.509 5.813L.057 23.625a.75.75 0 0 0 .918.918l5.812-1.452A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 0 1-4.966-1.361l-.356-.212-3.695.922.937-3.616-.232-.373A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Falar pelo WhatsApp
+      </a>
+    </div>
+  </div>
 
   <!-- ======================== HERO ======================== -->
   <section id="hero">
@@ -2063,6 +2158,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       lb.classList.remove('open');
       document.body.style.overflow = '';
     }
+
+    // Menu mobile
+    const hamburger   = document.getElementById('hamburger');
+    const mobileMenu  = document.getElementById('mobileMenu');
+
+    function openMenu() {
+      hamburger.classList.add('active');
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.contains('active') ? closeMenu() : openMenu();
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
 
     // Accordion
     document.querySelectorAll('.svc-header').forEach(h => {
