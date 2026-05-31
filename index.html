@@ -1185,7 +1185,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ====================== */
   #contato {
     padding: 100px 0;
-    background: var(--black);
+    background: var(--white);
+    border-top: 1px solid rgba(0,0,0,0.06);
   }
 
   .contato-inner {
@@ -1202,14 +1203,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     letter-spacing: -0.03em;
     line-height: 1.05;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: var(--black);
   }
 
-  .contato-left h2 span { font-weight: 100; color: rgba(255,255,255,0.35); }
+  .contato-left h2 span { font-weight: 100; color: rgba(0,0,0,0.28); }
 
   .contato-left p {
     font-size: 0.85rem;
-    color: rgba(255,255,255,0.45);
+    color: var(--gray-text);
     line-height: 1.75;
     font-weight: 300;
     margin-bottom: 2.25rem;
@@ -1253,14 +1254,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     content: '';
     flex: 1;
     height: 1px;
-    background: rgba(255,255,255,0.06);
+    background: rgba(0,0,0,0.08);
   }
 
   .contato-divider span {
     font-size: 0.6rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.25);
+    color: rgba(0,0,0,0.32);
     white-space: nowrap;
   }
 
@@ -1288,15 +1289,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.35);
+    color: rgba(0,0,0,0.45);
   }
 
   .fg input,
   .fg select,
   .fg textarea {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.09);
-    color: var(--white);
+    background: rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.1);
+    color: var(--black);
     font-family: var(--font);
     font-size: 0.86rem;
     font-weight: 300;
@@ -1310,22 +1311,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .fg input:focus,
   .fg select:focus,
   .fg textarea:focus {
-    border-color: var(--gold-line);
-    background: rgba(255,255,255,0.06);
+    border-color: var(--gold);
+    background: rgba(0,0,0,0.04);
   }
 
   .fg input::placeholder,
-  .fg textarea::placeholder { color: rgba(255,255,255,0.18); }
+  .fg textarea::placeholder { color: rgba(0,0,0,0.22); }
 
   .fg select {
     cursor: pointer;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 1rem center;
     padding-right: 2.5rem;
   }
 
-  .fg select option { background: var(--black-3); color: var(--white); }
+  .fg select option { background: var(--white); color: var(--black); }
 
   .fg textarea { resize: vertical; min-height: 100px; }
 
