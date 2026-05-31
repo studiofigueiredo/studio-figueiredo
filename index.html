@@ -1093,6 +1093,94 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
   /* ======================
+     FAQ
+  ====================== */
+  #faq {
+    padding: 100px 0;
+    background: var(--black-2);
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .faq-intro { margin-bottom: 4.5rem; }
+  .faq-intro .label { margin-bottom: 1.25rem; }
+
+  .faq-intro h2 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--white);
+    line-height: 1.08;
+    margin-top: 0.9rem;
+  }
+
+  .faq-intro h2 span { font-weight: 100; color: rgba(255,255,255,0.4); }
+
+  .faq-list {
+    border-top: 1px solid rgba(255,255,255,0.07);
+    max-width: 860px;
+  }
+
+  .faq-item { border-bottom: 1px solid rgba(255,255,255,0.07); }
+
+  .faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.75rem 0;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .faq-question {
+    font-size: clamp(0.88rem, 1.5vw, 1.02rem);
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: -0.01em;
+    line-height: 1.45;
+    transition: color 0.25s;
+  }
+
+  .faq-header:hover .faq-question,
+  .faq-item.open  .faq-question { color: var(--gold); }
+
+  .faq-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.3);
+    transition: transform 0.38s cubic-bezier(0.16,1,0.3,1), color 0.25s, border-color 0.25s, background 0.25s;
+  }
+
+  .faq-item.open .faq-icon {
+    transform: rotate(45deg);
+    color: var(--gold);
+    border-color: var(--gold-line);
+    background: var(--gold-dim);
+  }
+
+  .faq-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .faq-item.open .faq-body { max-height: 360px; }
+
+  .faq-answer {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.52);
+    line-height: 1.9;
+    font-weight: 300;
+    padding-bottom: 1.75rem;
+    max-width: 680px;
+  }
+
+  /* ======================
      CONTATO
   ====================== */
   #contato {
@@ -1590,6 +1678,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><a href="#processo">Processo</a></li>
           <li><a href="#diferenciais">Por que nós</a></li>
           <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
         <a href="#contato" class="nav-cta">Solicitar orçamento</a>
@@ -1608,6 +1697,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="#processo">Processo</a></li>
       <li><a href="#diferenciais">Por que nós</a></li>
       <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
     <div class="mob-cta-wrap">
@@ -2002,6 +2092,105 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- ======================== FAQ ======================== -->
+  <section id="faq">
+    <div class="wrap">
+
+      <div class="faq-intro reveal">
+        <span class="label">Dúvidas frequentes</span>
+        <h2>Perguntas <span>que surgem</span><br>antes do contato.</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item reveal">
+          <div class="faq-header">
+            <span class="faq-question">Ainda não tenho o projeto fechado. Posso entrar em contato agora?</span>
+            <span class="faq-icon">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-answer">Sim. Você pode me enviar o que tiver: planta em desenvolvimento, briefing inicial, memorial parcial. Leio o que existe, entendo o momento do projeto e monto uma proposta adequada ao estágio em que você está. Não precisa esperar tudo pronto para começar a conversa.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d1">
+          <div class="faq-header">
+            <span class="faq-question">Nunca contratamos visualização 3D antes. Vamos conseguir acompanhar o processo?</span>
+            <span class="faq-icon">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-answer">Sim. O processo foi desenhado para isso. Você não precisa saber o que pedir. Antes de qualquer produção, leio o projeto, entendo o empreendimento e o público, e indico as câmeras com maior potencial visual e comercial. Chego ao briefing com perguntas específicas sobre o seu projeto. Não sobre 3D.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d2">
+          <div class="faq-header">
+            <span class="faq-question">Preciso de muitas revisões. Como isso funciona?</span>
+            <span class="faq-icon">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-answer">Duas rodadas estão incluídas no contrato. O motivo é simples: leio o projeto como arquiteta antes de produzir qualquer imagem. Planta, memorial, compatibilização com interiores. O que chega na primeira entrega já reflete o que foi projetado, não uma interpretação. Quem entende o projeto antes de abrir o software entrega certo, menos retrabalho.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d3">
+          <div class="faq-header">
+            <span class="faq-question">Qual é o prazo de entrega?</span>
+            <span class="faq-icon">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-answer">Não existe um prazo fixo. Depende da quantidade de imagens e do escopo do projeto. O que existe é compromisso com a data que você precisa. Você me conta o cronograma do lançamento, eu organizo a produção para entregar dentro dele. Trabalho com o seu prazo, não com o meu.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-header">
+            <span class="faq-question">Como fica a comunicação durante o projeto? Vou precisar ficar cobrando?</span>
+            <span class="faq-icon">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-answer">Não. Toda semana você recebe uma atualização de andamento: etapa em curso e próxima entrega prevista. Sem precisar perguntar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d1">
+          <div class="faq-header">
+            <span class="faq-question">Fica em outro estado. Consegue atender?</span>
+            <span class="faq-icon">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-answer">Todo o processo é remoto. Briefing por vídeo, atualizações semanais por mensagem, entrega em nuvem. Atendo incorporadoras em qualquer estado do Brasil com o mesmo processo e o mesmo resultado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-d2">
+          <div class="faq-header">
+            <span class="faq-question">Quero começar. O que faço agora?</span>
+            <span class="faq-icon">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-answer">Me manda o projeto pelo WhatsApp ou pelo formulário abaixo. Leio antes de responder e retorno já com uma leitura do que faz sentido para o seu lançamento.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ======================== CONTATO ======================== -->
   <section id="contato">
     <div class="wrap">
@@ -2193,6 +2382,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         const item   = h.closest('.svc-item');
         const isOpen = item.classList.contains('open');
         document.querySelectorAll('.svc-item.open').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-header').forEach(h => {
+      h.addEventListener('click', () => {
+        const item   = h.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
         if (!isOpen) item.classList.add('open');
       });
     });
