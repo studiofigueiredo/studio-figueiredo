@@ -674,6 +674,122 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
   /* ======================
+     VIDEO SHOWCASE
+  ====================== */
+  .vid-showcase {
+    margin-top: 5rem;
+    padding-top: 4.5rem;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .vid-showcase-text .label { margin-bottom: 1rem; }
+
+  .vid-showcase-text h3 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--black);
+    line-height: 1.1;
+    margin-top: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .vid-showcase-text h3 span { font-weight: 100; color: var(--gray-mid); }
+
+  .vid-showcase-text p {
+    font-size: 0.88rem;
+    color: var(--gray-text);
+    line-height: 1.85;
+    font-weight: 300;
+    max-width: 440px;
+  }
+
+  .vid-frame { position: relative; width: 100%; max-width: 380px; margin: 0 auto; }
+
+  .vid-phone {
+    position: relative;
+    background: #0a0a0a;
+    border-radius: 36px;
+    border: 6px solid #1c1c1c;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.07), 0 24px 60px rgba(0,0,0,0.22);
+    overflow: hidden;
+    padding-top: 14px;
+  }
+
+  .vid-notch {
+    position: absolute;
+    top: 0; left: 50%; transform: translateX(-50%);
+    width: 78px; height: 22px;
+    background: #0a0a0a;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    z-index: 10;
+  }
+
+  .vid-container {
+    position: relative;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  .vid-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .vid-mute-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    background: rgba(0,0,0,0.52);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.2s;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .vid-mute-btn:hover { background: rgba(0,0,0,0.78); }
+
+  .vid-caption {
+    font-size: 0.68rem;
+    color: rgba(0,0,0,0.3);
+    text-align: center;
+    margin-top: 0.85rem;
+    letter-spacing: 0.04em;
+  }
+
+  @media (max-width: 1023px) {
+    .vid-showcase { grid-template-columns: 1fr; gap: 3rem; }
+    .vid-frame { max-width: 420px; }
+    .vid-phone { border-radius: 28px; border-width: 5px; }
+    .vid-container { border-radius: 24px; }
+    .vid-notch { display: none; }
+  }
+
+  @media (max-width: 767px) {
+    .vid-showcase { margin-top: 3.5rem; padding-top: 3rem; }
+    .vid-frame { max-width: 100%; }
+    .vid-phone { border: none; border-radius: 0; background: transparent; box-shadow: none; padding-top: 0; }
+    .vid-container { border-radius: 14px; background: #000; }
+  }
+
+  /* ======================
      PROCESSO
   ====================== */
   #processo {
@@ -1921,6 +2037,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
       </div>
+
+      <!-- Video Showcase: Animação Arquitetônica -->
+      <div class="vid-showcase reveal">
+        <div class="vid-showcase-text">
+          <span class="label" style="color:var(--gold)">Animação Arquitetônica</span>
+          <h3>Veja o empreendimento <span>em movimento.</span></h3>
+          <p>Vídeo do projeto com câmeras em movimento, iluminação realista e trilha sonora. Produzido para estande de vendas, redes sociais e campanhas de mídia paga. Roteiro personalizado com base no público do lançamento.</p>
+        </div>
+
+        <div class="vid-frame">
+          <div class="vid-phone">
+            <div class="vid-notch" aria-hidden="true"></div>
+            <div class="vid-container">
+              <video
+                id="vidAnimacao"
+                aria-label="Animação arquitetônica de ambiente humanizado — Studio Figueiredo"
+                poster="animacao-humanizada-01-poster.jpg"
+                preload="metadata"
+                muted
+                loop
+                playsinline
+              >
+                <source src="animacao-humanizada-01.webm" type="video/webm" />
+                <source src="animacao-humanizada-01.mp4" type="video/mp4" />
+              </video>
+              <button class="vid-mute-btn" id="vidMuteBtn" aria-label="Ativar som">
+                <svg id="iconMuted" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                <svg id="iconSound" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+              </button>
+            </div>
+          </div>
+          <p class="vid-caption">Animação arquitetônica — ambiente humanizado</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -2412,6 +2563,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         if (!isOpen) item.classList.add('open');
       });
     });
+
+    // Video showcase — autoplay via IntersectionObserver + mute toggle
+    const vidEl     = document.getElementById('vidAnimacao');
+    const muteBtn   = document.getElementById('vidMuteBtn');
+    const iconMuted = document.getElementById('iconMuted');
+    const iconSound = document.getElementById('iconSound');
+
+    if (vidEl) {
+      const vidObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            vidEl.play().catch(() => {});
+          } else {
+            vidEl.pause();
+          }
+        });
+      }, { threshold: 0.3 });
+
+      vidObserver.observe(vidEl);
+
+      muteBtn.addEventListener('click', () => {
+        vidEl.muted = !vidEl.muted;
+        iconMuted.style.display = vidEl.muted ? '' : 'none';
+        iconSound.style.display  = vidEl.muted ? 'none' : '';
+        muteBtn.setAttribute('aria-label', vidEl.muted ? 'Ativar som' : 'Desativar som');
+      });
+    }
 
     // FAQ Accordion
     document.querySelectorAll('.faq-header').forEach(h => {
