@@ -205,11 +205,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .lang-switcher { display: flex; align-items: center; gap: 2px; }
   .lang-btn {
     background: none; border: none; cursor: pointer;
-    font-size: 0.58rem; font-weight: 700; letter-spacing: .1em;
-    color: rgba(255,255,255,0.28); padding: 3px 5px;
+    font-size: 0.68rem; font-weight: 600; letter-spacing: .04em;
+    color: rgba(255,255,255,0.32); padding: 3px 6px;
     transition: color .2s; font-family: inherit; line-height: 1;
+    display: flex; align-items: center; gap: 4px;
   }
-  .lang-btn:hover { color: rgba(255,255,255,0.6); }
+  .lang-btn .flag { font-size: 1rem; line-height: 1; }
+  .lang-btn:hover { color: rgba(255,255,255,0.65); }
   .lang-btn.lang-active { color: var(--gold); }
   .lang-sep { color: rgba(255,255,255,0.12); font-size: 0.5rem; user-select: none; }
 
@@ -1850,11 +1852,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           (14) 99151-5454
         </a>
         <div class="lang-switcher">
-          <button class="lang-btn lang-active" data-lang="pt" onclick="setLang('pt')">PT</button>
+          <button class="lang-btn lang-active" data-lang="pt" onclick="setLang('pt')"><span class="flag">🇧🇷</span> PT</button>
           <span class="lang-sep">·</span>
-          <button class="lang-btn" data-lang="es" onclick="setLang('es')">ES</button>
+          <button class="lang-btn" data-lang="es" onclick="setLang('es')"><span class="flag">🇪🇸</span> ES</button>
           <span class="lang-sep">·</span>
-          <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" data-lang="en" onclick="setLang('en')"><span class="flag">🇺🇸</span> EN</button>
         </div>
         <a href="#contato" class="nav-cta" data-i18n="nav-cta">Solicitar orçamento</a>
         <div class="hamburger" id="hamburger">
@@ -1881,11 +1883,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span data-i18n="wa-falar">Falar pelo WhatsApp</span>
       </a>
       <div class="lang-switcher" style="justify-content:center;margin-top:1rem;gap:6px">
-        <button class="lang-btn lang-active" data-lang="pt" onclick="setLang('pt')" style="font-size:0.75rem;padding:4px 8px">PT</button>
+        <button class="lang-btn lang-active" data-lang="pt" onclick="setLang('pt')" style="font-size:0.78rem;padding:5px 10px"><span class="flag" style="font-size:1.2rem">🇧🇷</span> PT</button>
         <span class="lang-sep" style="font-size:0.65rem">·</span>
-        <button class="lang-btn" data-lang="es" onclick="setLang('es')" style="font-size:0.75rem;padding:4px 8px">ES</button>
+        <button class="lang-btn" data-lang="es" onclick="setLang('es')" style="font-size:0.78rem;padding:5px 10px"><span class="flag" style="font-size:1.2rem">🇪🇸</span> ES</button>
         <span class="lang-sep" style="font-size:0.65rem">·</span>
-        <button class="lang-btn" data-lang="en" onclick="setLang('en')" style="font-size:0.75rem;padding:4px 8px">EN</button>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')" style="font-size:0.78rem;padding:5px 10px"><span class="flag" style="font-size:1.2rem">🇺🇸</span> EN</button>
       </div>
     </div>
   </div>
