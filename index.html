@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <!-- Google Tag Manager -->
@@ -201,18 +201,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   .nav-phone:hover { color: var(--gold); }
   .nav-phone svg { flex-shrink: 0; }
-
-  .lang-switcher { display: flex; align-items: center; gap: 6px; }
-  .lang-btn {
-    background: none; border: none; cursor: pointer;
-    padding: 0; line-height: 0;
-    opacity: 0.38; border-radius: 3px;
-    transition: opacity .2s, transform .15s;
-  }
-  .lang-btn svg { display: block; width: 28px; height: 20px; border-radius: 3px; }
-  .lang-btn:hover { opacity: 0.75; transform: scale(1.1); }
-  .lang-btn.lang-active { opacity: 1; outline: 2px solid var(--gold); outline-offset: 2px; }
-  .lang-sep { display: none; }
 
   .hamburger {
     display: none;
@@ -1838,47 +1826,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </a>
         <ul class="nav-links">
-          <li><a href="#portfolio" data-i18n="nav-port">Portfólio</a></li>
-          <li><a href="#servicos" data-i18n="nav-srv">Serviços</a></li>
-          <li><a href="#processo" data-i18n="nav-proc">Processo</a></li>
-          <li><a href="#diferenciais" data-i18n="nav-why">Por que nós</a></li>
-          <li><a href="#sobre" data-i18n="nav-about">Sobre</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#processo">Processo</a></li>
+          <li><a href="#diferenciais">Por que nós</a></li>
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contato" data-i18n="nav-contact">Contato</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
         <a href="tel:+5514991515454" class="nav-phone">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.11 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
           (14) 99151-5454
         </a>
-        <div class="lang-switcher">
-          <button class="lang-btn lang-active" data-lang="pt" onclick="setLang('pt')" title="Português (Brasil)">
-            <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="28" height="20" fill="#009C3B"/>
-              <polygon points="14,1.5 26.5,10 14,18.5 1.5,10" fill="#FFDF00"/>
-              <circle cx="14" cy="10" r="5.5" fill="#002776"/>
-              <path d="M9,13 Q14,10.5 19,8" stroke="white" stroke-width="1.2" fill="none"/>
-            </svg>
-          </button>
-          <button class="lang-btn" data-lang="es" onclick="setLang('es')" title="Español">
-            <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="28" height="20" fill="#AA151B"/>
-              <rect y="5" width="28" height="10" fill="#F1BF00"/>
-            </svg>
-          </button>
-          <button class="lang-btn" data-lang="en" onclick="setLang('en')" title="English (US)">
-            <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="28" height="20" fill="#B22234"/>
-              <rect y="1.54" width="28" height="1.54" fill="white"/>
-              <rect y="4.61" width="28" height="1.54" fill="white"/>
-              <rect y="7.69" width="28" height="1.54" fill="white"/>
-              <rect y="10.77" width="28" height="1.54" fill="white"/>
-              <rect y="13.84" width="28" height="1.54" fill="white"/>
-              <rect y="16.92" width="28" height="1.54" fill="white"/>
-              <rect width="11" height="10.77" fill="#3C3B6E"/>
-            </svg>
-          </button>
-        </div>
-        <a href="#contato" class="nav-cta" data-i18n="nav-cta">Solicitar orçamento</a>
+        <a href="#contato" class="nav-cta">Solicitar orçamento</a>
         <div class="hamburger" id="hamburger">
           <span></span><span></span><span></span>
         </div>
@@ -1889,47 +1849,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- MENU MOBILE -->
   <div class="mobile-menu" id="mobileMenu">
     <ul>
-      <li><a href="#portfolio" data-i18n="nav-port">Portfólio</a></li>
-      <li><a href="#servicos" data-i18n="nav-srv">Serviços</a></li>
-      <li><a href="#processo" data-i18n="nav-proc">Processo</a></li>
-      <li><a href="#diferenciais" data-i18n="nav-why">Por que nós</a></li>
-      <li><a href="#sobre" data-i18n="nav-about">Sobre</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#processo">Processo</a></li>
+      <li><a href="#diferenciais">Por que nós</a></li>
+      <li><a href="#sobre">Sobre</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contato" data-i18n="nav-contact">Contato</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
     <div class="mob-cta-wrap">
       <a href="https://wa.me/5514991515454?text=Ol%C3%A1%2C+vim+pelo+site+e+quero+saber+sobre+renderiza%C3%A7%C3%A3o+3D+para+meu+lan%C3%A7amento" target="_blank" rel="noopener" class="btn-wa">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.09 1.509 5.813L.057 23.625a.75.75 0 0 0 .918.918l5.812-1.452A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 0 1-4.966-1.361l-.356-.212-3.695.922.937-3.616-.232-.373A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-        <span data-i18n="wa-falar">Falar pelo WhatsApp</span>
+        Falar pelo WhatsApp
       </a>
-      <div class="lang-switcher" style="justify-content:center;margin-top:1.25rem;gap:14px">
-        <button class="lang-btn lang-active" data-lang="pt" onclick="setLang('pt')" title="Português (Brasil)">
-          <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:42px;height:30px;border-radius:4px">
-            <rect width="28" height="20" fill="#009C3B"/>
-            <polygon points="14,1.5 26.5,10 14,18.5 1.5,10" fill="#FFDF00"/>
-            <circle cx="14" cy="10" r="5.5" fill="#002776"/>
-            <path d="M9,13 Q14,10.5 19,8" stroke="white" stroke-width="1.2" fill="none"/>
-          </svg>
-        </button>
-        <button class="lang-btn" data-lang="es" onclick="setLang('es')" title="Español">
-          <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:42px;height:30px;border-radius:4px">
-            <rect width="28" height="20" fill="#AA151B"/>
-            <rect y="5" width="28" height="10" fill="#F1BF00"/>
-          </svg>
-        </button>
-        <button class="lang-btn" data-lang="en" onclick="setLang('en')" title="English (US)">
-          <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:42px;height:30px;border-radius:4px">
-            <rect width="28" height="20" fill="#B22234"/>
-            <rect y="1.54" width="28" height="1.54" fill="white"/>
-            <rect y="4.61" width="28" height="1.54" fill="white"/>
-            <rect y="7.69" width="28" height="1.54" fill="white"/>
-            <rect y="10.77" width="28" height="1.54" fill="white"/>
-            <rect y="13.84" width="28" height="1.54" fill="white"/>
-            <rect y="16.92" width="28" height="1.54" fill="white"/>
-            <rect width="11" height="10.77" fill="#3C3B6E"/>
-          </svg>
-        </button>
-      </div>
     </div>
   </div>
 
@@ -1940,21 +1872,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrap">
       <div class="hero-content">
         <div class="hero-eyebrow">
-          <span class="label" data-i18n="hero-eyebrow">Studio Figueiredo · Renderização 3D</span>
+          <span class="label">Studio Figueiredo · Renderização 3D</span>
         </div>
-        <span class="hero-badge" data-i18n="hero-badge">Para incorporadoras e construtoras</span>
+        <span class="hero-badge">Para incorporadoras e construtoras</span>
         <div class="hero-h1">
-          <span class="l1" data-i18n="hero-l1">Imagens que vendem o empreendimento</span>
-          <span class="l2" data-i18n="hero-l2">antes do início</span>
-          <span class="l3" data-i18n="hero-l3">da obra.</span>
+          <span class="l1">Imagens que vendem o empreendimento</span>
+          <span class="l2">antes do início</span>
+          <span class="l3">da obra.</span>
         </div>
-        <p class="hero-sub" data-i18n-html="hero-sub">Visualização arquitetônica desenvolvida por arquiteta, com leitura técnica de projeto e visão de <strong style="color:var(--gold);font-weight:700;border-bottom:1.5px solid var(--gold);padding-bottom:0.08em">mercado imobiliário</strong>.</p>
+        <p class="hero-sub">Visualização arquitetônica desenvolvida por arquiteta, com leitura técnica de projeto e visão de <strong style="color:var(--gold);font-weight:700;border-bottom:1.5px solid var(--gold);padding-bottom:0.08em">mercado imobiliário</strong>.</p>
         <div class="hero-actions">
           <a href="https://wa.me/5514991515454?text=Ol%C3%A1%2C+vim+pelo+site+e+quero+saber+sobre+renderiza%C3%A7%C3%A3o+3D+para+meu+lan%C3%A7amento" target="_blank" rel="noopener" class="btn-wa">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.09 1.509 5.813L.057 23.625a.75.75 0 0 0 .918.918l5.812-1.452A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 0 1-4.966-1.361l-.356-.212-3.695.922.937-3.616-.232-.373A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-            <span data-i18n="wa-falar">Falar pelo WhatsApp</span>
+            Falar pelo WhatsApp
           </a>
-          <a href="#portfolio" class="btn-ghost" data-i18n="hero-ghost">Ver portfólio</a>
+          <a href="#portfolio" class="btn-ghost">Ver portfólio</a>
         </div>
       </div>
     </div>
@@ -1989,14 +1921,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrap">
       <div class="port-head reveal">
         <div>
-          <span class="label" style="color:var(--gold)" data-i18n="port-label">Portfólio</span>
-          <h2 style="margin-top:0.9rem" data-i18n-html="port-title"><span>Projetos</span> realizados.</h2>
+          <span class="label" style="color:var(--gold)">Portfólio</span>
+          <h2 style="margin-top:0.9rem"><span>Projetos</span> realizados.</h2>
         </div>
         <div class="port-head-right">
-          <p data-i18n="port-sub">Projetos reais. Resultados concretos.</p>
+          <p>Projetos reais. Resultados concretos.</p>
           <a href="https://wa.me/5514991515454?text=Ol%C3%A1%2C+vi+o+portf%C3%B3lio+e+quero+solicitar+uma+proposta" target="_blank" rel="noopener" class="btn-wa" style="display:inline-flex; font-size:0.64rem; padding:0.75rem 1.25rem;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.09 1.509 5.813L.057 23.625a.75.75 0 0 0 .918.918l5.812-1.452A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 0 1-4.966-1.361l-.356-.212-3.695.922.937-3.616-.232-.373A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-            <span data-i18n="port-cta-sm">Solicitar proposta</span>
+            Solicitar proposta
           </a>
         </div>
       </div>
@@ -2013,10 +1945,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="port-cta reveal">
-        <p data-i18n="port-cta-p">Gostou do que viu? Conta como é o seu projeto.</p>
+        <p>Gostou do que viu? Conta como é o seu projeto.</p>
         <a href="https://wa.me/5514991515454?text=Ol%C3%A1%2C+vi+o+portf%C3%B3lio+e+quero+solicitar+uma+proposta" target="_blank" rel="noopener" class="btn-wa">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.09 1.509 5.813L.057 23.625a.75.75 0 0 0 .918.918l5.812-1.452A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 0 1-4.966-1.361l-.356-.212-3.695.922.937-3.616-.232-.373A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-          <span data-i18n="port-cta-lg">Solicitar proposta para meu lançamento</span>
+          Solicitar proposta para meu lançamento
         </a>
       </div>
     </div>
@@ -2027,97 +1959,97 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrap">
       <div class="svc-head reveal">
         <div>
-          <span class="label" style="color:var(--gold)" data-i18n="srv-label">Serviços</span>
-          <h2 style="margin-top:0.9rem" data-i18n-html="srv-title"><span>Renderização 3D</span><br>ultra realista.</h2>
+          <span class="label" style="color:var(--gold)">Serviços</span>
+          <h2 style="margin-top:0.9rem"><span>Renderização 3D</span><br>ultra realista.</h2>
         </div>
-        <p class="svc-head-note" data-i18n="srv-sub">Renders 3D ultra realistas e animações para incorporadoras e construtoras. Seu lançamento no mercado com a imagem certa, no momento certo.</p>
+        <p class="svc-head-note">Renders 3D ultra realistas e animações para incorporadoras e construtoras. Seu lançamento no mercado com a imagem certa, no momento certo.</p>
       </div>
 
       <div class="svc-list">
 
         <div class="svc-item">
           <div class="svc-header">
-            <div class="svc-title-row"><span class="svc-title" data-i18n="s1-name">Renderização 3D</span></div>
+            <div class="svc-title-row"><span class="svc-title">Renderização 3D</span></div>
             <div class="svc-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           </div>
           <div class="svc-body"><div class="svc-body-inner">
-            <p class="svc-desc" data-i18n="s1-desc">Imagens fotorrealistas de fachada, ambientes internos e áreas comuns. Produzidas com leitura completa do projeto para representar com fidelidade o que será construído. Cada câmera é configurada para o material onde vai ser aplicada: outdoor, digital, estande de vendas.</p>
+            <p class="svc-desc">Imagens fotorrealistas de fachada, ambientes internos e áreas comuns. Produzidas com leitura completa do projeto para representar com fidelidade o que será construído. Cada câmera é configurada para o material onde vai ser aplicada: outdoor, digital, estande de vendas.</p>
           </div></div>
         </div>
 
         <div class="svc-item">
           <div class="svc-header">
-            <div class="svc-title-row"><span class="svc-title" data-i18n="s2-name">Animação Arquitetônica</span></div>
+            <div class="svc-title-row"><span class="svc-title">Animação Arquitetônica</span></div>
             <div class="svc-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           </div>
           <div class="svc-body"><div class="svc-body-inner">
-            <p class="svc-desc" data-i18n="s2-desc">Vídeo do empreendimento com câmeras em movimento, iluminação realista e trilha sonora. Para estande de vendas, redes sociais e campanhas de mídia paga. Roteiro personalizado com base no público do lançamento.</p>
+            <p class="svc-desc">Vídeo do empreendimento com câmeras em movimento, iluminação realista e trilha sonora. Para estande de vendas, redes sociais e campanhas de mídia paga. Roteiro personalizado com base no público do lançamento.</p>
           </div></div>
         </div>
 
         <div class="svc-item">
           <div class="svc-header">
-            <div class="svc-title-row"><span class="svc-title" data-i18n="s3-name">Planta Humanizada</span></div>
+            <div class="svc-title-row"><span class="svc-title">Planta Humanizada</span></div>
             <div class="svc-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           </div>
           <div class="svc-body"><div class="svc-body-inner">
-            <p class="svc-desc" data-i18n="s3-desc">Planta com mobiliário, texturas e acabamentos aplicados com fidelidade ao projeto de interiores. Disponível em 2D para documentação e material de vendas, ou em perspectiva 3D isométrica para peças premium.</p>
+            <p class="svc-desc">Planta com mobiliário, texturas e acabamentos aplicados com fidelidade ao projeto de interiores. Disponível em 2D para documentação e material de vendas, ou em perspectiva 3D isométrica para peças premium.</p>
           </div></div>
         </div>
 
         <div class="svc-item">
           <div class="svc-header">
-            <div class="svc-title-row"><span class="svc-title" data-i18n="s4-name">Estudo Visual</span></div>
+            <div class="svc-title-row"><span class="svc-title">Estudo Visual</span></div>
             <div class="svc-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           </div>
           <div class="svc-body"><div class="svc-body-inner">
-            <p class="svc-desc" data-i18n="s4-desc">Perspectivas conceituais com textura e atmosfera definidas, produzidas antes do projeto finalizado. Suficiente para alinhar expectativas internas e tomar decisões de produto com base no que a imagem vai comunicar.</p>
+            <p class="svc-desc">Perspectivas conceituais com textura e atmosfera definidas, produzidas antes do projeto finalizado. Suficiente para alinhar expectativas internas e tomar decisões de produto com base no que a imagem vai comunicar.</p>
           </div></div>
         </div>
 
         <div class="svc-item">
           <div class="svc-header">
-            <div class="svc-title-row"><span class="svc-title" data-i18n="s5-name">Análise de Viabilidade Visual</span></div>
+            <div class="svc-title-row"><span class="svc-title">Análise de Viabilidade Visual</span></div>
             <div class="svc-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           </div>
           <div class="svc-body"><div class="svc-body-inner">
-            <p class="svc-desc" data-i18n="s5-desc">Revisão técnica do projeto antes de qualquer produção de imagem. Leitura do arquivo arquitetônico, interiores e paisagismo. Indicação das câmeras com maior potencial visual e comercial.</p>
-          </div></div>
-        </div>
-
-        <div class="svc-item">
-          <div class="svc-header">
-            <div class="svc-title-row">
-              <span class="svc-title" data-i18n="s6-name">Consultoria de Produto com Visão de Imagem</span>
-              <span class="svc-badge" data-i18n="srv-excl">Exclusivo</span>
-            </div>
-            <div class="svc-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          </div>
-          <div class="svc-body"><div class="svc-body-inner">
-            <p class="svc-desc" data-i18n="s6-desc">Sessão remota na fase de concepção do produto. Análise de massa, fachada e áreas comuns com foco em como o empreendimento vai ser lido na imagem pelo comprador daquele segmento.</p>
+            <p class="svc-desc">Revisão técnica do projeto antes de qualquer produção de imagem. Leitura do arquivo arquitetônico, interiores e paisagismo. Indicação das câmeras com maior potencial visual e comercial.</p>
           </div></div>
         </div>
 
         <div class="svc-item">
           <div class="svc-header">
             <div class="svc-title-row">
-              <span class="svc-title" data-i18n="s7-name">Imagens para Captação de Investidores</span>
-              <span class="svc-badge" data-i18n="srv-excl">Exclusivo</span>
+              <span class="svc-title">Consultoria de Produto com Visão de Imagem</span>
+              <span class="svc-badge">Exclusivo</span>
             </div>
             <div class="svc-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           </div>
           <div class="svc-body"><div class="svc-body-inner">
-            <p class="svc-desc" data-i18n="s7-desc">Imagens para apresentações a investidores, gestores de fundo e comitês de captação. Escala urbana, implantação contextualizada e atmosfera de credibilidade. Visual construído para um público diferente do comprador final.</p>
+            <p class="svc-desc">Sessão remota na fase de concepção do produto. Análise de massa, fachada e áreas comuns com foco em como o empreendimento vai ser lido na imagem pelo comprador daquele segmento.</p>
           </div></div>
         </div>
 
         <div class="svc-item">
           <div class="svc-header">
-            <div class="svc-title-row"><span class="svc-title" data-i18n="s8-name">Briefing Visual para Agência de Marketing</span></div>
+            <div class="svc-title-row">
+              <span class="svc-title">Imagens para Captação de Investidores</span>
+              <span class="svc-badge">Exclusivo</span>
+            </div>
             <div class="svc-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           </div>
           <div class="svc-body"><div class="svc-body-inner">
-            <p class="svc-desc" data-i18n="s8-desc">Documento entregue junto com as imagens. Orienta a agência sobre a narrativa de cada câmera, o perfil de comprador que aquele ângulo atende e onde posicionar cada imagem na campanha. Incluso em projetos acima de 5 imagens.</p>
+            <p class="svc-desc">Imagens para apresentações a investidores, gestores de fundo e comitês de captação. Escala urbana, implantação contextualizada e atmosfera de credibilidade. Visual construído para um público diferente do comprador final.</p>
+          </div></div>
+        </div>
+
+        <div class="svc-item">
+          <div class="svc-header">
+            <div class="svc-title-row"><span class="svc-title">Briefing Visual para Agência de Marketing</span></div>
+            <div class="svc-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p class="svc-desc">Documento entregue junto com as imagens. Orienta a agência sobre a narrativa de cada câmera, o perfil de comprador que aquele ângulo atende e onde posicionar cada imagem na campanha. Incluso em projetos acima de 5 imagens.</p>
           </div></div>
         </div>
 
@@ -2126,9 +2058,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- Video Showcase: Animação Arquitetônica -->
       <div class="vid-showcase reveal">
         <div class="vid-showcase-text">
-          <span class="label" style="color:var(--gold)" data-i18n="vid-label">Animação Arquitetônica</span>
-          <h3 data-i18n-html="vid-title">Veja o empreendimento <span>em movimento.</span></h3>
-          <p data-i18n="vid-desc">Vídeo do projeto com câmeras em movimento, iluminação realista e trilha sonora. Produzido para estande de vendas, redes sociais e campanhas de mídia paga. Roteiro personalizado com base no público do lançamento.</p>
+          <span class="label" style="color:var(--gold)">Animação Arquitetônica</span>
+          <h3>Veja o empreendimento <span>em movimento.</span></h3>
+          <p>Vídeo do projeto com câmeras em movimento, iluminação realista e trilha sonora. Produzido para estande de vendas, redes sociais e campanhas de mídia paga. Roteiro personalizado com base no público do lançamento.</p>
         </div>
 
         <div class="vid-frame">
@@ -2163,9 +2095,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section id="processo">
     <div class="wrap">
       <div class="proc-intro reveal">
-        <span class="label" data-i18n="proc-label">Como trabalhamos</span>
-        <h2 style="margin-top:1.1rem" data-i18n-html="proc-title">Seis etapas. <span>Nenhum ruído.</span></h2>
-        <p data-i18n="proc-intro">Do material enviado à entrega final, você sabe o que acontece, quando acontece e o que recebe em cada fase.</p>
+        <span class="label">Como trabalhamos</span>
+        <h2 style="margin-top:1.1rem">Seis etapas. <span>Nenhum ruído.</span></h2>
+        <p>Do material enviado à entrega final, você sabe o que acontece, quando acontece e o que recebe em cada fase.</p>
       </div>
 
       <div class="proc-layout">
@@ -2175,58 +2107,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="ps reveal">
             <div class="ps-num">01</div>
             <div class="ps-body">
-              <span class="ps-tag" data-i18n="p1-tag">Antes de qualquer reunião</span>
-              <h4 data-i18n="p1-h4">Análise do projeto</h4>
-              <p data-i18n="p1-p">Você envia o material disponível: planta, memorial e referências. Antes de conversar, leio o projeto com atenção. Volumetria, posicionamento do empreendimento, o que precisa aparecer para convencer quem vai comprar.</p>
-              <p class="ps-note" data-i18n="p1-note">Chego ao briefing com perguntas específicas sobre o seu projeto, não perguntas genéricas que qualquer estúdio faria.</p>
+              <span class="ps-tag">Antes de qualquer reunião</span>
+              <h4>Análise do projeto</h4>
+              <p>Você envia o material disponível: planta, memorial e referências. Antes de conversar, leio o projeto com atenção. Volumetria, posicionamento do empreendimento, o que precisa aparecer para convencer quem vai comprar.</p>
+              <p class="ps-note">Chego ao briefing com perguntas específicas sobre o seu projeto, não perguntas genéricas que qualquer estúdio faria.</p>
             </div>
           </div>
 
           <div class="ps reveal reveal-d1">
             <div class="ps-num">02</div>
             <div class="ps-body">
-              <span class="ps-tag" data-i18n="p2-tag">Diagnóstico e escopo</span>
-              <h4 data-i18n="p2-h4">Briefing e proposta</h4>
-              <p data-i18n="p2-p">Uma conversa de 30 minutos por vídeo ou formulário de briefing enviado por e-mail. Com o projeto já lido, o briefing vai fundo no que importa.</p>
-              <p class="ps-note" data-i18n="p2-note">A proposta que chega depois nomeia cada câmera, não só quantidade. Você aprova uma intenção, não um número.</p>
+              <span class="ps-tag">Diagnóstico e escopo</span>
+              <h4>Briefing e proposta</h4>
+              <p>Uma conversa de 30 minutos por vídeo ou formulário de briefing enviado por e-mail. Com o projeto já lido, o briefing vai fundo no que importa.</p>
+              <p class="ps-note">A proposta que chega depois nomeia cada câmera, não só quantidade. Você aprova uma intenção, não um número.</p>
             </div>
           </div>
 
           <div class="ps reveal reveal-d2">
             <div class="ps-num">03</div>
             <div class="ps-body">
-              <span class="ps-tag" data-i18n="p3-tag">Trava de início</span>
-              <h4 data-i18n="p3-h4">Contrato e início</h4>
-              <p data-i18n="p3-p">Nada começa sem escopo alinhado, contrato assinado e primeira parcela confirmada. Qualquer mudança de escopo é conversada antes, nunca depois.</p>
+              <span class="ps-tag">Trava de início</span>
+              <h4>Contrato e início</h4>
+              <p>Nada começa sem escopo alinhado, contrato assinado e primeira parcela confirmada. Qualquer mudança de escopo é conversada antes, nunca depois.</p>
             </div>
           </div>
 
           <div class="ps reveal reveal-d3">
             <div class="ps-num">04</div>
             <div class="ps-body">
-              <span class="ps-tag" data-i18n="p4-tag">Produção</span>
-              <h4 data-i18n="p4-h4">3ds Max, Corona Render e pós-produção manual</h4>
-              <p data-i18n="p4-p">Toda semana você recebe uma atualização de andamento, sem precisar perguntar. A primeira entrega apresenta opções de atmosfera para você escolher o caminho visual antes de detalhar tudo.</p>
-              <p class="ps-note" data-i18n="p4-note">Luz, hora do dia, temperatura de cor. Essas decisões são tomadas juntas antes do render final, não descobertas no resultado.</p>
+              <span class="ps-tag">Produção</span>
+              <h4>3ds Max, Corona Render e pós-produção manual</h4>
+              <p>Toda semana você recebe uma atualização de andamento, sem precisar perguntar. A primeira entrega apresenta opções de atmosfera para você escolher o caminho visual antes de detalhar tudo.</p>
+              <p class="ps-note">Luz, hora do dia, temperatura de cor. Essas decisões são tomadas juntas antes do render final, não descobertas no resultado.</p>
             </div>
           </div>
 
           <div class="ps reveal">
             <div class="ps-num">05</div>
             <div class="ps-body">
-              <span class="ps-tag" data-i18n="p5-tag">Duas rodadas incluídas</span>
-              <h4 data-i18n="p5-h4">Revisão</h4>
-              <p data-i18n="p5-p">Você aponta, eu ajusto. As revisões são consolidadas em plataforma. Nada se perde em mensagem de voz ou e-mail esquecido. Cada solicitação fica registrada e rastreável.</p>
-              <p class="ps-note" data-i18n="p5-note">Se surgir algo fora do escopo original, conversamos antes de qualquer custo extra.</p>
+              <span class="ps-tag">Duas rodadas incluídas</span>
+              <h4>Revisão</h4>
+              <p>Você aponta, eu ajusto. As revisões são consolidadas em plataforma. Nada se perde em mensagem de voz ou e-mail esquecido. Cada solicitação fica registrada e rastreável.</p>
+              <p class="ps-note">Se surgir algo fora do escopo original, conversamos antes de qualquer custo extra.</p>
             </div>
           </div>
 
           <div class="ps reveal reveal-d1">
             <div class="ps-num">06</div>
             <div class="ps-body">
-              <span class="ps-tag" data-i18n="p6-tag">Alta resolução, organizado por uso</span>
-              <h4 data-i18n="p6-h4">Entrega</h4>
-              <p data-i18n="p6-p">Arquivos organizados por canal: stand de vendas, campanha digital, redes sociais, apresentação de diretoria. Tudo nomeado, em nuvem, com guia de uso incluído.</p>
+              <span class="ps-tag">Alta resolução, organizado por uso</span>
+              <h4>Entrega</h4>
+              <p>Arquivos organizados por canal: stand de vendas, campanha digital, redes sociais, apresentação de diretoria. Tudo nomeado, em nuvem, com guia de uso incluído.</p>
             </div>
           </div>
 
@@ -2235,21 +2167,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="proc-promise reveal reveal-d1">
           <!-- TODO: substituir por depoimento real de cliente quando disponível -->
           <div class="pp-quote">
-            <span class="label" style="margin-bottom:0.85rem" data-i18n="pp-label">Nossa filosofia</span>
-            <blockquote data-i18n="pp-quote">Incorporadoras usam nossas imagens para vender antes da obra começar. Precisão não é promessa. É entrega.</blockquote>
+            <span class="label" style="margin-bottom:0.85rem">Nossa filosofia</span>
+            <blockquote>Incorporadoras usam nossas imagens para vender antes da obra começar. Precisão não é promessa. É entrega.</blockquote>
             <cite>Noemi Figueiredo · Arquiteta e fundadora</cite>
           </div>
           <div class="pp-pillar">
-            <strong data-i18n="pp-p1a">Prazo definido antes de começar</strong>
-            <span data-i18n="pp-p1b">Confirmado na proposta, não depois do problema aparecer</span>
+            <strong>Prazo definido antes de começar</strong>
+            <span>Confirmado na proposta, não depois do problema aparecer</span>
           </div>
           <div class="pp-pillar" style="border-bottom:1px solid rgba(255,255,255,0.04); margin-bottom:2rem;">
-            <strong data-i18n="pp-p2a">Comunicação direta</strong>
-            <span data-i18n="pp-p2b">Com quem faz o trabalho. Sem intermediários.</span>
+            <strong>Comunicação direta</strong>
+            <span>Com quem faz o trabalho. Sem intermediários.</span>
           </div>
           <a href="https://wa.me/5514991515454?text=Ol%C3%A1%2C+quero+saber+mais+sobre+o+processo+de+trabalho" target="_blank" rel="noopener" class="btn-wa" style="width:100%; justify-content:center; display:flex;">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.09 1.509 5.813L.057 23.625a.75.75 0 0 0 .918.918l5.812-1.452A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 0 1-4.966-1.361l-.356-.212-3.695.922.937-3.616-.232-.373A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-            <span data-i18n="wa-noemi">Falar com a Noemi</span>
+            Falar com a Noemi
           </a>
         </div>
 
@@ -2262,36 +2194,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrap">
 
       <div class="dif-top reveal">
-        <span class="label" data-i18n="dif-label">Por que contratar</span>
-        <h2 data-i18n-html="dif-title">Por que o <span>Studio Figueiredo?</span></h2>
+        <span class="label">Por que contratar</span>
+        <h2>Por que o <span>Studio Figueiredo?</span></h2>
       </div>
 
       <div class="dif-quote-block reveal">
-        <blockquote data-i18n="dif-quote">"Formação em arquitetura muda o que aparece na imagem, não só como ela é feita."</blockquote>
-        <p data-i18n="dif-sub">Compatibilização entre projetos, leitura técnica de planta, ângulos que respeitam a intenção do arquiteto. Menos revisão. Mais resultado na primeira entrega.</p>
+        <blockquote>"Formação em arquitetura muda o que aparece na imagem, não só como ela é feita."</blockquote>
+        <p>Compatibilização entre projetos, leitura técnica de planta, ângulos que respeitam a intenção do arquiteto. Menos revisão. Mais resultado na primeira entrega.</p>
       </div>
 
       <div class="dif-grid">
 
         <div class="dif-item reveal">
           <span class="dif-n">01</span>
-          <h4 data-i18n="d1-h4">Primeira entrega com textura</h4>
-          <p class="dif-desc" data-i18n="d1-desc">Nenhuma massa branca. A primeira versão já chega com materiais, atmosfera e opções de direção visual para você escolher o caminho antes de detalhar tudo.</p>
-          <p class="dif-benefit" data-i18n="d1-ben">Aprovação de diretoria na primeira reunião, não na terceira. Menos rodadas, menos custo de tempo interno.</p>
+          <h4>Primeira entrega com textura</h4>
+          <p class="dif-desc">Nenhuma massa branca. A primeira versão já chega com materiais, atmosfera e opções de direção visual para você escolher o caminho antes de detalhar tudo.</p>
+          <p class="dif-benefit">Aprovação de diretoria na primeira reunião, não na terceira. Menos rodadas, menos custo de tempo interno.</p>
         </div>
 
         <div class="dif-item reveal reveal-d1">
           <span class="dif-n">02</span>
-          <h4 data-i18n="d2-h4">Atualização toda semana</h4>
-          <p class="dif-desc" data-i18n="d2-desc">Toda sexta você recebe o status do projeto por mensagem: etapa em andamento e próxima entrega prevista. Sem precisar perguntar, sem ficar no escuro.</p>
-          <p class="dif-benefit" data-i18n="d2-ben">Incorporadoras com vários projetos simultâneos não perdem tempo gerenciando fornecedor. O estúdio reporta antes de ser cobrado.</p>
+          <h4>Atualização toda semana</h4>
+          <p class="dif-desc">Toda sexta você recebe o status do projeto por mensagem: etapa em andamento e próxima entrega prevista. Sem precisar perguntar, sem ficar no escuro.</p>
+          <p class="dif-benefit">Incorporadoras com vários projetos simultâneos não perdem tempo gerenciando fornecedor. O estúdio reporta antes de ser cobrado.</p>
         </div>
 
         <div class="dif-item reveal reveal-d2">
           <span class="dif-n">03</span>
-          <h4 data-i18n="d3-h4">Olhar de arquiteta</h4>
-          <p class="dif-desc" data-i18n="d3-desc">Antes de abrir o software, leio o projeto: planta, memorial, compatibilização entre arquitetura e interiores. O que aparece na imagem é o que foi projetado, não uma interpretação livre.</p>
-          <p class="dif-benefit" data-i18n="d3-ben">Menos retrabalho por erro de leitura técnica. Menos revisão de elementos que não correspondiam ao projeto original.</p>
+          <h4>Olhar de arquiteta</h4>
+          <p class="dif-desc">Antes de abrir o software, leio o projeto: planta, memorial, compatibilização entre arquitetura e interiores. O que aparece na imagem é o que foi projetado, não uma interpretação livre.</p>
+          <p class="dif-benefit">Menos retrabalho por erro de leitura técnica. Menos revisão de elementos que não correspondiam ao projeto original.</p>
         </div>
 
       </div>
@@ -2302,10 +2234,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section id="sobre">
     <div class="wrap">
       <div class="sobre-top reveal">
-        <span class="label" data-i18n="sobre-label">Sobre a fundadora</span>
+        <span class="label">Sobre a fundadora</span>
         <div class="sobre-slogan" style="margin-top:1.75rem">
-          <span class="slogan-thin" data-i18n="sobre-s1">Você vê o projeto.</span>
-          <span class="slogan-bold" data-i18n="sobre-s2">Eu vejo o lançamento.</span>
+          <span class="slogan-thin">Você vê o projeto.</span>
+          <span class="slogan-bold">Eu vejo o lançamento.</span>
         </div>
       </div>
       <div class="sobre-grid">
@@ -2314,16 +2246,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="sobre-bio reveal reveal-d1">
           <div class="sobre-name">Noemi Figueiredo</div>
-          <div class="sobre-role" data-i18n="sobre-role">Arquiteta e fundadora</div>
-          <p class="sobre-text" data-i18n="sobre-bio">
+          <div class="sobre-role">Arquiteta e fundadora</div>
+          <p class="sobre-text">
             Com 15 anos de experiência entre arquitetura e o mercado imobiliário, Noemi participou de reuniões de diretoria em incorporadoras, conduziu estudos de viabilidade e acompanhou projetos da concepção à entrega de chaves. Esse histórico define como cada imagem do Studio Figueiredo é produzida: não apenas pelo que o projeto é, mas pelo que ele precisa comunicar para ser vendido.
           </p>
           <div class="sobre-creds">
             <div class="scred">
               <div class="scred-icon">15</div>
               <div class="scred-text">
-                <strong data-i18n="c1a">Anos de experiência</strong>
-                <span data-i18n="c1b">Arquitetura e visualização para o mercado imobiliário</span>
+                <strong>Anos de experiência</strong>
+                <span>Arquitetura e visualização para o mercado imobiliário</span>
               </div>
             </div>
             <div class="scred">
@@ -2331,8 +2263,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
               <div class="scred-text">
-                <strong data-i18n="c2a">Reuniões de diretoria</strong>
-                <span data-i18n="c2b">Presente nas decisões estratégicas de produto em incorporadoras</span>
+                <strong>Reuniões de diretoria</strong>
+                <span>Presente nas decisões estratégicas de produto em incorporadoras</span>
               </div>
             </div>
             <div class="scred">
@@ -2340,14 +2272,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
               </div>
               <div class="scred-text">
-                <strong data-i18n="c3a">Da concepção à entrega</strong>
-                <span data-i18n="c3b">Experiência completa no ciclo do lançamento imobiliário</span>
+                <strong>Da concepção à entrega</strong>
+                <span>Experiência completa no ciclo do lançamento imobiliário</span>
               </div>
             </div>
           </div>
           <a href="https://wa.me/5514991515454?text=Ol%C3%A1%2C+vi+o+site+e+quero+conversar+sobre+meu+projeto" target="_blank" rel="noopener" class="btn-wa">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.09 1.509 5.813L.057 23.625a.75.75 0 0 0 .918.918l5.812-1.452A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 0 1-4.966-1.361l-.356-.212-3.695.922.937-3.616-.232-.373A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-            <span data-i18n="wa-noemi">Falar com a Noemi</span>
+            Falar com a Noemi
           </a>
         </div>
       </div>
@@ -2359,93 +2291,93 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrap">
 
       <div class="faq-intro reveal">
-        <span class="label" data-i18n="faq-label">Dúvidas frequentes</span>
-        <h2 data-i18n-html="faq-title">Perguntas <span>que surgem</span><br>antes do contato.</h2>
+        <span class="label">Dúvidas frequentes</span>
+        <h2>Perguntas <span>que surgem</span><br>antes do contato.</h2>
       </div>
 
       <div class="faq-list">
 
         <div class="faq-item reveal">
           <div class="faq-header">
-            <span class="faq-question" data-i18n="q1-q">Ainda não tenho o projeto fechado. Posso entrar em contato agora?</span>
+            <span class="faq-question">Ainda não tenho o projeto fechado. Posso entrar em contato agora?</span>
             <span class="faq-icon">
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </span>
           </div>
           <div class="faq-body">
-            <p class="faq-answer" data-i18n="q1-a">Sim. Você pode me enviar o que tiver: planta em desenvolvimento, briefing inicial, memorial parcial. Leio o que existe, entendo o momento do projeto e monto uma proposta adequada ao estágio em que você está. Não precisa esperar tudo pronto para começar a conversa.</p>
+            <p class="faq-answer">Sim. Você pode me enviar o que tiver: planta em desenvolvimento, briefing inicial, memorial parcial. Leio o que existe, entendo o momento do projeto e monto uma proposta adequada ao estágio em que você está. Não precisa esperar tudo pronto para começar a conversa.</p>
           </div>
         </div>
 
         <div class="faq-item reveal reveal-d1">
           <div class="faq-header">
-            <span class="faq-question" data-i18n="q2-q">Nunca contratamos visualização 3D antes. Vamos conseguir acompanhar o processo?</span>
+            <span class="faq-question">Nunca contratamos visualização 3D antes. Vamos conseguir acompanhar o processo?</span>
             <span class="faq-icon">
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </span>
           </div>
           <div class="faq-body">
-            <p class="faq-answer" data-i18n="q2-a">Sim. O processo foi desenhado para isso. Você não precisa saber o que pedir. Antes de qualquer produção, leio o projeto, entendo o empreendimento e o público, e indico as câmeras com maior potencial visual e comercial. Chego ao briefing com perguntas específicas sobre o seu projeto. Não sobre 3D.</p>
+            <p class="faq-answer">Sim. O processo foi desenhado para isso. Você não precisa saber o que pedir. Antes de qualquer produção, leio o projeto, entendo o empreendimento e o público, e indico as câmeras com maior potencial visual e comercial. Chego ao briefing com perguntas específicas sobre o seu projeto. Não sobre 3D.</p>
           </div>
         </div>
 
         <div class="faq-item reveal reveal-d2">
           <div class="faq-header">
-            <span class="faq-question" data-i18n="q3-q">Preciso de muitas revisões. Como isso funciona?</span>
+            <span class="faq-question">Preciso de muitas revisões. Como isso funciona?</span>
             <span class="faq-icon">
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </span>
           </div>
           <div class="faq-body">
-            <p class="faq-answer" data-i18n="q3-a">Duas rodadas estão incluídas no contrato. O motivo é simples: leio o projeto como arquiteta antes de produzir qualquer imagem. Planta, memorial, compatibilização com interiores. O que chega na primeira entrega já reflete o que foi projetado, não uma interpretação. Quem entende o projeto antes de abrir o software entrega certo, menos retrabalho.</p>
+            <p class="faq-answer">Duas rodadas estão incluídas no contrato. O motivo é simples: leio o projeto como arquiteta antes de produzir qualquer imagem. Planta, memorial, compatibilização com interiores. O que chega na primeira entrega já reflete o que foi projetado, não uma interpretação. Quem entende o projeto antes de abrir o software entrega certo, menos retrabalho.</p>
           </div>
         </div>
 
         <div class="faq-item reveal reveal-d3">
           <div class="faq-header">
-            <span class="faq-question" data-i18n="q4-q">Qual é o prazo de entrega?</span>
+            <span class="faq-question">Qual é o prazo de entrega?</span>
             <span class="faq-icon">
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </span>
           </div>
           <div class="faq-body">
-            <p class="faq-answer" data-i18n="q4-a">Não existe um prazo fixo. Depende da quantidade de imagens e do escopo do projeto. O que existe é compromisso com a data que você precisa. Você me conta o cronograma do lançamento, eu organizo a produção para entregar dentro dele. Trabalho com o seu prazo, não com o meu.</p>
+            <p class="faq-answer">Não existe um prazo fixo. Depende da quantidade de imagens e do escopo do projeto. O que existe é compromisso com a data que você precisa. Você me conta o cronograma do lançamento, eu organizo a produção para entregar dentro dele. Trabalho com o seu prazo, não com o meu.</p>
           </div>
         </div>
 
         <div class="faq-item reveal">
           <div class="faq-header">
-            <span class="faq-question" data-i18n="q5-q">Como fica a comunicação durante o projeto? Vou precisar ficar cobrando?</span>
+            <span class="faq-question">Como fica a comunicação durante o projeto? Vou precisar ficar cobrando?</span>
             <span class="faq-icon">
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </span>
           </div>
           <div class="faq-body">
-            <p class="faq-answer" data-i18n="q5-a">Não. Toda semana você recebe uma atualização de andamento: etapa em curso e próxima entrega prevista. Sem precisar perguntar.</p>
+            <p class="faq-answer">Não. Toda semana você recebe uma atualização de andamento: etapa em curso e próxima entrega prevista. Sem precisar perguntar.</p>
           </div>
         </div>
 
         <div class="faq-item reveal reveal-d1">
           <div class="faq-header">
-            <span class="faq-question" data-i18n="q6-q">Fica em outro estado. Consegue atender?</span>
+            <span class="faq-question">Fica em outro estado. Consegue atender?</span>
             <span class="faq-icon">
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </span>
           </div>
           <div class="faq-body">
-            <p class="faq-answer" data-i18n="q6-a">Todo o processo é remoto. Briefing por vídeo, atualizações semanais por mensagem, entrega em nuvem. Atendo incorporadoras em qualquer estado do Brasil com o mesmo processo e o mesmo resultado.</p>
+            <p class="faq-answer">Todo o processo é remoto. Briefing por vídeo, atualizações semanais por mensagem, entrega em nuvem. Atendo incorporadoras em qualquer estado do Brasil com o mesmo processo e o mesmo resultado.</p>
           </div>
         </div>
 
         <div class="faq-item reveal reveal-d2">
           <div class="faq-header">
-            <span class="faq-question" data-i18n="q7-q">Quero começar. O que faço agora?</span>
+            <span class="faq-question">Quero começar. O que faço agora?</span>
             <span class="faq-icon">
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="6.5" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </span>
           </div>
           <div class="faq-body">
-            <p class="faq-answer" data-i18n="q7-a">Me manda o projeto pelo WhatsApp ou pelo formulário abaixo. Leio antes de responder e retorno já com uma leitura do que faz sentido para o seu lançamento.</p>
+            <p class="faq-answer">Me manda o projeto pelo WhatsApp ou pelo formulário abaixo. Leio antes de responder e retorno já com uma leitura do que faz sentido para o seu lançamento.</p>
           </div>
         </div>
 
@@ -2459,57 +2391,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="contato-inner">
 
         <div class="contato-left reveal">
-          <span class="label" data-i18n="ct-label">Contato</span>
-          <h2 style="margin-top:1.1rem" data-i18n-html="ct-title">Pronto para <span>começar?</span></h2>
-          <p data-i18n="ct-sub">Fale agora pelo WhatsApp. Respondo em até 4 horas em dias úteis.</p>
+          <span class="label">Contato</span>
+          <h2 style="margin-top:1.1rem">Pronto para <span>começar?</span></h2>
+          <p>Fale agora pelo WhatsApp. Respondo em até 4 horas em dias úteis.</p>
           <div class="contato-wa-wrap">
             <a href="https://wa.me/5514991515454?text=Ol%C3%A1%2C+vim+pelo+site+e+quero+saber+sobre+renderiza%C3%A7%C3%A3o+3D+para+meu+lan%C3%A7amento" target="_blank" rel="noopener" class="btn-wa-lg">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.09 1.509 5.813L.057 23.625a.75.75 0 0 0 .918.918l5.812-1.452A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 0 1-4.966-1.361l-.356-.212-3.695.922.937-3.616-.232-.373A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-              <span data-i18n="ct-wa">Falar pelo WhatsApp agora</span>
+              Falar pelo WhatsApp agora
             </a>
           </div>
           <div class="contato-divider">
-            <span data-i18n="ct-or">ou preencha o formulário</span>
+            <span>ou preencha o formulário</span>
           </div>
         </div>
 
         <form class="form reveal reveal-d1" id="form" onsubmit="submitForm(event)">
           <div class="form-row">
             <div class="fg">
-              <label for="nome" data-i18n="f-nome">Nome</label>
-              <input type="text" id="nome" data-i18n-ph="f-nome-ph" placeholder="Seu nome" required />
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Seu nome" required />
             </div>
             <div class="fg">
-              <label for="empresa" data-i18n="f-empresa">Empresa</label>
-              <input type="text" id="empresa" data-i18n-ph="f-empresa-ph" placeholder="Nome da empresa" />
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" placeholder="Nome da empresa" />
             </div>
           </div>
           <div class="fg">
-            <label for="email" data-i18n="f-email">E-mail</label>
+            <label for="email">E-mail</label>
             <input type="email" id="email" placeholder="seu@email.com" required />
           </div>
           <div class="fg">
-            <label for="tipo" data-i18n="f-tipo">Tipo de projeto</label>
+            <label for="tipo">Tipo de projeto</label>
             <select id="tipo">
-              <option value="" disabled selected data-i18n="f-sel">Selecione uma opção</option>
-              <option data-i18n="s1-name">Renderização 3D</option>
-              <option data-i18n="s2-name">Animação Arquitetônica</option>
-              <option data-i18n="s3-name">Planta Humanizada</option>
-              <option data-i18n="s4-name">Estudo Visual</option>
-              <option data-i18n="s5-name">Análise de Viabilidade Visual</option>
-              <option data-i18n="s6-name">Consultoria de Produto com Visão de Imagem</option>
-              <option data-i18n="s7-name">Imagens para Captação de Investidores</option>
-              <option data-i18n="s8-name">Briefing Visual para Agência de Marketing</option>
-              <option data-i18n="f-lancamento">Lançamento imobiliário completo</option>
-              <option data-i18n="f-outro">Outro</option>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option>Renderização 3D</option>
+              <option>Animação Arquitetônica</option>
+              <option>Planta Humanizada</option>
+              <option>Estudo Visual</option>
+              <option>Análise de Viabilidade Visual</option>
+              <option>Consultoria de Produto com Visão de Imagem</option>
+              <option>Imagens para Captação de Investidores</option>
+              <option>Briefing Visual para Agência de Marketing</option>
+              <option>Lançamento imobiliário completo</option>
+              <option>Outro</option>
             </select>
           </div>
           <div class="fg">
-            <label for="msg" data-i18n="f-msg">Mensagem</label>
-            <textarea id="msg" data-i18n-ph="f-msg-ph" placeholder="Conte um pouco sobre o seu projeto..." rows="4"></textarea>
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" placeholder="Conte um pouco sobre o seu projeto..." rows="4"></textarea>
           </div>
           <button type="submit" class="btn-submit" id="submitBtn">
-            <span data-i18n="f-send">Enviar mensagem</span>
+            Enviar mensagem
             <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
         </form>
@@ -2527,35 +2459,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="lm-sf">SF</span>
             <span class="lm-bar"></span>
           </div>
-          <p class="f-tagline" data-i18n="ft-tagline">Imagens que vendem o empreendimento. Lançamentos que acontecem.</p>
+          <p class="f-tagline">Imagens que vendem o empreendimento. Lançamentos que acontecem.</p>
           <a href="https://wa.me/5514991515454" target="_blank" rel="noopener" class="f-wa-link">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.09 1.509 5.813L.057 23.625a.75.75 0 0 0 .918.918l5.812-1.452A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 0 1-4.966-1.361l-.356-.212-3.695.922.937-3.616-.232-.373A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
             WhatsApp
           </a>
         </div>
         <div class="footer-col">
-          <h5 data-i18n="ft-nav">Navegação</h5>
+          <h5>Navegação</h5>
           <ul>
-            <li><a href="#portfolio" data-i18n="nav-port">Portfólio</a></li>
-            <li><a href="#servicos" data-i18n="nav-srv">Serviços</a></li>
-            <li><a href="#processo" data-i18n="nav-proc">Processo</a></li>
-            <li><a href="#diferenciais" data-i18n="nav-why">Por que nós</a></li>
-            <li><a href="#sobre" data-i18n="nav-about">Sobre</a></li>
-            <li><a href="#contato" data-i18n="nav-contact">Contato</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#processo">Processo</a></li>
+            <li><a href="#diferenciais">Por que nós</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h5 data-i18n="srv-label">Serviços</h5>
+          <h5>Serviços</h5>
           <ul>
-            <li><a href="#servicos" data-i18n="s1-name">Renderização 3D</a></li>
-            <li><a href="#servicos" data-i18n="s2-name">Animação Arquitetônica</a></li>
-            <li><a href="#servicos" data-i18n="s3-name">Planta Humanizada</a></li>
-            <li><a href="#servicos" data-i18n="ft-inv">Imagens para Investidores</a></li>
+            <li><a href="#servicos">Renderização 3D</a></li>
+            <li><a href="#servicos">Animação Arquitetônica</a></li>
+            <li><a href="#servicos">Planta Humanizada</a></li>
+            <li><a href="#servicos">Imagens para Investidores</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p data-i18n="ft-copy">© 2026 Studio Figueiredo. Todos os direitos reservados.</p>
+        <p>© 2026 Studio Figueiredo. Todos os direitos reservados.</p>
         <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center">
           <a href="tel:+5514991515454" style="display:flex;align-items:center;gap:5px;text-decoration:none;color:rgba(255,255,255,0.35);font-size:0.66rem;font-weight:300;transition:color 0.25s" onmouseover="this.style.color='#BFA060'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#BFA060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.11 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
@@ -2694,280 +2626,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         if (!isOpen) item.classList.add('open');
       });
     });
-
-    // ── Language switcher ─────────────────────────────────────────────────
-    const T = {
-      pt: {
-        'nav-port':'Portfólio','nav-srv':'Serviços','nav-proc':'Processo',
-        'nav-why':'Por que nós','nav-about':'Sobre','nav-contact':'Contato',
-        'nav-cta':'Solicitar orçamento',
-        'wa-falar':'Falar pelo WhatsApp','wa-noemi':'Falar com a Noemi',
-        'hero-eyebrow':'Visualização 3D para o mercado imobiliário',
-        'hero-badge':'Especialistas em 3D',
-        'hero-l1':'Imagens que','hero-l2':'vendem antes','hero-l3':'de construir',
-        'hero-sub':'<p>Criamos visualizações 3D que conectam compradores ao imóvel dos sonhos, impulsionando as vendas do <strong style="color:var(--gold);text-decoration:underline;text-decoration-color:rgba(191,160,96,0.3)">mercado imobiliário</strong>.</p>',
-        'hero-ghost':'Ver portfólio',
-        'port-label':'Portfólio',
-        'port-title':'Projetos que <span class="gold">transformam espaços</span>',
-        'port-sub':'Cada imagem conta a história do imóvel antes mesmo de ele existir.',
-        'port-cta-sm':'Ver projetos menores','port-cta-p':'Ver projetos em planta','port-cta-lg':'Ver projetos maiores',
-        'srv-label':'Serviços',
-        'srv-title':'O que fazemos <span class="gold">por você</span>',
-        'srv-sub':'Soluções completas de visualização 3D para destacar seu empreendimento.',
-        'srv-excl':'Todos os serviços incluem revisões ilimitadas',
-        's1-name':'Renderização 3D','s1-desc':'Imagens fotorrealistas de ambientes internos e externos com iluminação e textura de alta fidelidade.',
-        's2-name':'Animação Arquitetônica','s2-desc':'Vídeos imersivos que conduzem o cliente por todos os ambientes do projeto.',
-        's3-name':'Planta Humanizada','s3-desc':'Plantas baixas com mobiliário, texturas e vegetação para facilitar a leitura do espaço.',
-        's4-name':'Imagens Aéreas','s4-desc':'Perspectivas de drone para mostrar a localização e a grandiosidade do empreendimento.',
-        's5-name':'Consultoria de Apresentação','s5-desc':'Orientação estratégica para transformar suas visualizações em material de venda.',
-        's6-name':'Material para Incorporadora','s6-desc':'Peças completas para lançamento: book de vendas, stands e apresentações.',
-        's7-name':'Imagens para Investidores','s7-desc':'Visualizações que transmitem confiança e potencial de retorno para captação de investidores.',
-        's8-name':'Consultoria Imobiliária','s8-desc':'Análise do mercado e posicionamento visual do produto para maximizar o resultado das vendas.',
-        'vid-label':'Animação',
-        'vid-title':'Veja o projeto <span class="gold">ganhando vida</span>',
-        'vid-desc':'Esta animação arquitetônica foi criada para imersão total no projeto, conduzindo o espectador por cada detalhe com cinematografia e luz natural.',
-        'proc-label':'Processo',
-        'proc-title':'Como trabalhamos <span class="gold">com você</span>',
-        'proc-intro':'Um processo colaborativo e transparente, do briefing à entrega.',
-        'p1-tag':'Briefing','p1-h4':'Entendemos o seu projeto',
-        'p1-p':'Você nos conta tudo sobre o empreendimento: tipologia, público-alvo, diferenciais e tom visual desejado.','p1-note':'100% online',
-        'p2-tag':'Proposta','p2-h4':'Definimos escopo e prazo',
-        'p2-p':'Apresentamos um orçamento detalhado com todas as entregas, prazos e formas de pagamento.','p2-note':'Sem surpresas',
-        'p3-tag':'Modelagem','p3-h4':'Construímos em 3D',
-        'p3-p':'Nossa equipe modela o projeto com precisão técnica, criando a base para as renderizações finais.',
-        'p4-tag':'Aprovação','p4-h4':'Você revisa e aprova',
-        'p4-p':'Apresentamos uma prévia para sua aprovação, garantindo que o resultado final supere suas expectativas.','p4-note':'Revisões ilimitadas',
-        'p5-tag':'Produção','p5-h4':'Renderizamos com qualidade',
-        'p5-p':'Com a aprovação em mãos, iniciamos a produção das imagens finais em alta resolução.','p5-note':'Alta resolução',
-        'p6-tag':'Entrega','p6-h4':'Recebe os arquivos prontos',
-        'p6-p':'Entregamos todos os arquivos em formato profissional, prontos para uso em material de vendas e marketing.',
-        'pp-label':'Nosso compromisso','pp-quote':'"Qualidade que fala por si mesma."',
-        'pp-p1a':'Cada projeto é tratado com dedicação exclusiva.','pp-p1b':'Você não é mais um cliente, você é o projeto.',
-        'pp-p2a':'Prezamos pela excelência em cada detalhe e pelo relacionamento próximo em cada etapa.','pp-p2b':'O sucesso do seu lançamento é o nosso sucesso.',
-        'dif-label':'Diferenciais',
-        'dif-title':'Por que escolher o <span class="gold">Studio Figueiredo</span>',
-        'dif-quote':'"Não entregamos apenas imagens. Entregamos confiança para o comprador e resultado para o incorporador."',
-        'dif-sub':'Três razões que nos diferenciam no mercado de visualização 3D.',
-        'd1-h4':'Especialização Imobiliária','d1-desc':'Não somos um estúdio genérico. Nossa expertise é exclusivamente no mercado imobiliário, entendendo suas necessidades e linguagem.','d1-ben':'Imagens que o comprador entende',
-        'd2-h4':'Processo Transparente','d2-desc':'Da proposta à entrega, você sabe exatamente o que esperar. Prazos cumpridos, revisões ilimitadas e comunicação direta com quem faz o projeto.','d2-ben':'Tranquilidade do início ao fim',
-        'd3-h4':'Foco em Resultado','d3-desc':'Cada imagem é pensada para converter. Estudamos a psicologia do comprador imobiliário para criar visualizações que geram desejo e aceleram as vendas.','d3-ben':'Mais vendas, menos tempo de estoque',
-        'sobre-label':'Sobre','sobre-s1':'Studio Figueiredo','sobre-s2':'Especialistas em Visualização 3D',
-        'sobre-role':'Fundadora e Diretora Criativa',
-        'sobre-bio':'Com anos de experiência no mercado imobiliário brasileiro, o Studio Figueiredo nasceu da crença de que visualizações 3D podem transformar a forma como as pessoas se conectam a um imóvel. Cada projeto é desenvolvido com cuidado artístico e precisão técnica, sempre com foco no resultado do cliente.',
-        'c1a':'+100','c1b':'Projetos entregues','c2a':'+5 anos','c2b':'de experiência','c3a':'100%','c3b':'Clientes satisfeitos',
-        'faq-label':'FAQ',
-        'faq-title':'Perguntas <span class="gold">frequentes</span>',
-        'q1-q':'Quanto tempo leva uma renderização?','q1-a':'O prazo varia conforme a complexidade do projeto e a quantidade de imagens. Em média, entregamos em 7 a 15 dias úteis. Projetos urgentes podem ser atendidos mediante consulta.',
-        'q2-q':'Vocês trabalham com qualquer tipo de projeto?','q2-a':'Nossa especialidade é o mercado imobiliário: residencial, comercial, loteamentos e empreendimentos de alto padrão. Também atendemos arquitetos e construtoras.',
-        'q3-q':'O que preciso fornecer para começar?','q3-a':'Precisamos dos arquivos do projeto: plantas, elevações e qualquer referência visual. Quanto mais informações, mais fiel será o resultado.',
-        'q4-q':'Quantas revisões estão incluídas?','q4-a':'Todas as revisões necessárias estão incluídas. Trabalhamos até que você esteja 100% satisfeito com o resultado.',
-        'q5-q':'Como funciona o pagamento?','q5-a':'Trabalhamos com 50% de entrada e 50% na entrega final. Aceitamos transferência bancária e Pix. Para projetos maiores, podemos parcelar em até 3 vezes.',
-        'q6-q':'Vocês atendem todo o Brasil?','q6-a':'Sim, atendemos clientes em todo o Brasil. Todo o processo é feito de forma 100% digital, com reuniões por videoconferência e entrega de arquivos por link seguro.',
-        'q7-q':'E se eu não tiver todos os arquivos do projeto?','q7-a':'Não tem problema. Trabalhamos com o que você tem e orientamos sobre o que mais pode ajudar. Em muitos casos, conseguimos partir de plantas básicas ou referências similares.',
-        'ct-label':'Contato',
-        'ct-title':'Vamos criar algo <span class="gold">incrível juntos</span>',
-        'ct-sub':'Entre em contato e receba um orçamento personalizado para o seu projeto.',
-        'ct-wa':'Prefere o WhatsApp?','ct-or':'ou preencha o formulário',
-        'f-nome':'Nome','f-nome-ph':'Seu nome completo',
-        'f-empresa':'Empresa (opcional)','f-empresa-ph':'Nome da sua empresa',
-        'f-email':'E-mail','f-tipo':'Tipo de projeto','f-sel':'Selecione uma opção',
-        'f-lancamento':'Lançamento imobiliário','f-outro':'Outro',
-        'f-msg':'Mensagem','f-msg-ph':'Conte-nos sobre o seu projeto',
-        'f-send':'Enviar pelo WhatsApp',
-        'ft-tagline':'Visualizações 3D que transformam projetos em resultados.',
-        'ft-nav':'Navegação','ft-inv':'Imagens para Investidores',
-        'ft-copy':'© 2026 Studio Figueiredo. Todos os direitos reservados.',
-      },
-      es: {
-        'nav-port':'Portafolio','nav-srv':'Servicios','nav-proc':'Proceso',
-        'nav-why':'Por qué nosotros','nav-about':'Sobre','nav-contact':'Contacto',
-        'nav-cta':'Solicitar presupuesto',
-        'wa-falar':'Hablar por WhatsApp','wa-noemi':'Hablar con Noemi',
-        'hero-eyebrow':'Visualización 3D para el mercado inmobiliario',
-        'hero-badge':'Especialistas en 3D',
-        'hero-l1':'Imágenes que','hero-l2':'venden antes','hero-l3':'de construir',
-        'hero-sub':'<p>Creamos visualizaciones 3D que conectan compradores con la propiedad de sus sueños, impulsando las ventas del <strong style="color:var(--gold);text-decoration:underline;text-decoration-color:rgba(191,160,96,0.3)">mercado inmobiliario</strong>.</p>',
-        'hero-ghost':'Ver portafolio',
-        'port-label':'Portafolio',
-        'port-title':'Proyectos que <span class="gold">transforman espacios</span>',
-        'port-sub':'Cada imagen cuenta la historia de la propiedad antes de que exista.',
-        'port-cta-sm':'Ver proyectos menores','port-cta-p':'Ver proyectos en planta','port-cta-lg':'Ver proyectos mayores',
-        'srv-label':'Servicios',
-        'srv-title':'Lo que hacemos <span class="gold">por usted</span>',
-        'srv-sub':'Soluciones completas de visualización 3D para destacar su proyecto.',
-        'srv-excl':'Todos los servicios incluyen revisiones ilimitadas',
-        's1-name':'Renderización 3D','s1-desc':'Imágenes fotorrealistas de ambientes interiores y exteriores con iluminación y textura de alta fidelidad.',
-        's2-name':'Animación Arquitectónica','s2-desc':'Videos inmersivos que guían al cliente por todos los ambientes del proyecto.',
-        's3-name':'Planta Humanizada','s3-desc':'Plantas con mobiliario, texturas y vegetación para facilitar la lectura del espacio.',
-        's4-name':'Imágenes Aéreas','s4-desc':'Perspectivas de dron para mostrar la ubicación y grandiosidad del proyecto.',
-        's5-name':'Consultoría de Presentación','s5-desc':'Orientación estratégica para transformar sus visualizaciones en material de ventas.',
-        's6-name':'Material para Desarrolladora','s6-desc':'Piezas completas para lanzamiento: book de ventas, stands y presentaciones.',
-        's7-name':'Imágenes para Inversores','s7-desc':'Visualizaciones que transmiten confianza y potencial de retorno para captación de inversores.',
-        's8-name':'Consultoría Inmobiliaria','s8-desc':'Análisis del mercado y posicionamiento visual del producto para maximizar el resultado de ventas.',
-        'vid-label':'Animación',
-        'vid-title':'Vea el proyecto <span class="gold">cobrando vida</span>',
-        'vid-desc':'Esta animación arquitectónica fue creada para una inmersión total en el proyecto, guiando al espectador por cada detalle con cinematografía y luz natural.',
-        'proc-label':'Proceso',
-        'proc-title':'Cómo trabajamos <span class="gold">con usted</span>',
-        'proc-intro':'Un proceso colaborativo y transparente, del briefing a la entrega.',
-        'p1-tag':'Briefing','p1-h4':'Entendemos su proyecto',
-        'p1-p':'Usted nos cuenta todo sobre el proyecto: tipología, público objetivo, diferenciales y tono visual deseado.','p1-note':'100% en línea',
-        'p2-tag':'Propuesta','p2-h4':'Definimos alcance y plazo',
-        'p2-p':'Presentamos un presupuesto detallado con todas las entregas, plazos y formas de pago.','p2-note':'Sin sorpresas',
-        'p3-tag':'Modelado','p3-h4':'Construimos en 3D',
-        'p3-p':'Nuestro equipo modela el proyecto con precisión técnica, creando la base para las renderizaciones finales.',
-        'p4-tag':'Aprobación','p4-h4':'Usted revisa y aprueba',
-        'p4-p':'Presentamos una vista previa para su aprobación, asegurando que el resultado final supere sus expectativas.','p4-note':'Revisiones ilimitadas',
-        'p5-tag':'Producción','p5-h4':'Renderizamos con calidad',
-        'p5-p':'Con la aprobación en mano, iniciamos la producción de las imágenes finales en alta resolución.','p5-note':'Alta resolución',
-        'p6-tag':'Entrega','p6-h4':'Recibe los archivos listos',
-        'p6-p':'Entregamos todos los archivos en formato profesional, listos para su uso en material de ventas y marketing.',
-        'pp-label':'Nuestro compromiso','pp-quote':'"Calidad que habla por sí misma."',
-        'pp-p1a':'Cada proyecto se trata con dedicación exclusiva.','pp-p1b':'Usted no es un cliente más, usted es el proyecto.',
-        'pp-p2a':'Valoramos la excelencia en cada detalle y la relación cercana en cada etapa.','pp-p2b':'El éxito de su lanzamiento es nuestro éxito.',
-        'dif-label':'Diferenciales',
-        'dif-title':'Por qué elegir el <span class="gold">Studio Figueiredo</span>',
-        'dif-quote':'"No entregamos solo imágenes. Entregamos confianza al comprador y resultado al desarrollador."',
-        'dif-sub':'Tres razones que nos diferencian en el mercado de visualización 3D.',
-        'd1-h4':'Especialización Inmobiliaria','d1-desc':'No somos un estudio genérico. Nuestra experiencia es exclusivamente en el mercado inmobiliario, entendiendo sus necesidades y lenguaje.','d1-ben':'Imágenes que el comprador entiende',
-        'd2-h4':'Proceso Transparente','d2-desc':'De la propuesta a la entrega, usted sabe exactamente qué esperar. Plazos cumplidos, revisiones ilimitadas y comunicación directa con quien hace el proyecto.','d2-ben':'Tranquilidad de principio a fin',
-        'd3-h4':'Enfoque en Resultado','d3-desc':'Cada imagen está pensada para convertir. Estudiamos la psicología del comprador inmobiliario para crear visualizaciones que generan deseo y aceleran las ventas.','d3-ben':'Más ventas, menos tiempo en inventario',
-        'sobre-label':'Sobre','sobre-s1':'Studio Figueiredo','sobre-s2':'Especialistas en Visualización 3D',
-        'sobre-role':'Fundadora y Directora Creativa',
-        'sobre-bio':'Con años de experiencia en el mercado inmobiliario brasileño, Studio Figueiredo nació de la creencia de que las visualizaciones 3D pueden transformar la forma en que las personas se conectan con una propiedad. Cada proyecto se desarrolla con cuidado artístico y precisión técnica, siempre enfocado en el resultado del cliente.',
-        'c1a':'+100','c1b':'Proyectos entregados','c2a':'+5 años','c2b':'de experiencia','c3a':'100%','c3b':'Clientes satisfechos',
-        'faq-label':'FAQ',
-        'faq-title':'Preguntas <span class="gold">frecuentes</span>',
-        'q1-q':'¿Cuánto tiempo tarda una renderización?','q1-a':'El plazo varía según la complejidad del proyecto y la cantidad de imágenes. En promedio, entregamos en 7 a 15 días hábiles. Los proyectos urgentes pueden atenderse previa consulta.',
-        'q2-q':'¿Trabajan con cualquier tipo de proyecto?','q2-a':'Nuestra especialidad es el mercado inmobiliario: residencial, comercial, loteos y desarrollos de alto nivel. También atendemos a arquitectos y constructoras.',
-        'q3-q':'¿Qué necesito proporcionar para empezar?','q3-a':'Necesitamos los archivos del proyecto: plantas, elevaciones y cualquier referencia visual. Cuanta más información, más fiel será el resultado.',
-        'q4-q':'¿Cuántas revisiones están incluidas?','q4-a':'Todas las revisiones necesarias están incluidas. Trabajamos hasta que usted esté 100% satisfecho con el resultado.',
-        'q5-q':'¿Cómo funciona el pago?','q5-a':'Trabajamos con el 50% de entrada y el 50% en la entrega final. Aceptamos transferencia bancaria y Pix. Para proyectos más grandes, podemos dividir en hasta 3 cuotas.',
-        'q6-q':'¿Atienden a todo Brasil?','q6-a':'Sí, atendemos clientes en todo Brasil. Todo el proceso se realiza de forma 100% digital, con reuniones por videoconferencia y entrega de archivos por enlace seguro.',
-        'q7-q':'¿Y si no tengo todos los archivos del proyecto?','q7-a':'No hay problema. Trabajamos con lo que usted tiene y orientamos sobre lo que más puede ayudar. En muchos casos, podemos partir de plantas básicas o referencias similares.',
-        'ct-label':'Contacto',
-        'ct-title':'Vamos crear algo <span class="gold">increíble juntos</span>',
-        'ct-sub':'Póngase en contacto y reciba un presupuesto personalizado para su proyecto.',
-        'ct-wa':'¿Prefiere WhatsApp?','ct-or':'o complete el formulario',
-        'f-nome':'Nombre','f-nome-ph':'Su nombre completo',
-        'f-empresa':'Empresa (opcional)','f-empresa-ph':'Nombre de su empresa',
-        'f-email':'E-mail','f-tipo':'Tipo de proyecto','f-sel':'Seleccione una opción',
-        'f-lancamento':'Lanzamiento inmobiliario','f-outro':'Otro',
-        'f-msg':'Mensaje','f-msg-ph':'Cuéntenos sobre su proyecto',
-        'f-send':'Enviar por WhatsApp',
-        'ft-tagline':'Visualizaciones 3D que transforman proyectos en resultados.',
-        'ft-nav':'Navegación','ft-inv':'Imágenes para Inversores',
-        'ft-copy':'© 2026 Studio Figueiredo. Todos los derechos reservados.',
-      },
-      en: {
-        'nav-port':'Portfolio','nav-srv':'Services','nav-proc':'Process',
-        'nav-why':'Why us','nav-about':'About','nav-contact':'Contact',
-        'nav-cta':'Request a quote',
-        'wa-falar':'Chat on WhatsApp','wa-noemi':'Talk to Noemi',
-        'hero-eyebrow':'3D Visualization for the Real Estate Market',
-        'hero-badge':'3D Specialists',
-        'hero-l1':'Images that','hero-l2':'sell before','hero-l3':'building',
-        'hero-sub':'<p>We create 3D visualizations that connect buyers to their dream property, driving sales in the <strong style="color:var(--gold);text-decoration:underline;text-decoration-color:rgba(191,160,96,0.3)">real estate market</strong>.</p>',
-        'hero-ghost':'View portfolio',
-        'port-label':'Portfolio',
-        'port-title':'Projects that <span class="gold">transform spaces</span>',
-        'port-sub':'Every image tells the story of the property before it even exists.',
-        'port-cta-sm':'View smaller projects','port-cta-p':'View floor plans','port-cta-lg':'View larger projects',
-        'srv-label':'Services',
-        'srv-title':'What we do <span class="gold">for you</span>',
-        'srv-sub':'Complete 3D visualization solutions to showcase your development.',
-        'srv-excl':'All services include unlimited revisions',
-        's1-name':'3D Rendering','s1-desc':'Photorealistic images of interior and exterior spaces with high-fidelity lighting and texture.',
-        's2-name':'Architectural Animation','s2-desc':'Immersive videos that walk clients through every space in the project.',
-        's3-name':'Humanized Floor Plan','s3-desc':'Floor plans with furniture, textures, and vegetation to make the space easy to read.',
-        's4-name':'Aerial Imagery','s4-desc':'Drone perspectives to showcase the location and scale of the development.',
-        's5-name':'Presentation Consulting','s5-desc':'Strategic guidance to turn your visualizations into sales material.',
-        's6-name':'Developer Material','s6-desc':'Complete launch materials: sales book, stands, and presentations.',
-        's7-name':'Investor Imagery','s7-desc':'Visualizations that convey confidence and return potential to attract investors.',
-        's8-name':'Real Estate Consulting','s8-desc':'Market analysis and visual product positioning to maximize sales results.',
-        'vid-label':'Animation',
-        'vid-title':'See the project <span class="gold">come to life</span>',
-        'vid-desc':'This architectural animation was created for total project immersion, guiding the viewer through every detail with cinematography and natural light.',
-        'proc-label':'Process',
-        'proc-title':'How we work <span class="gold">with you</span>',
-        'proc-intro':'A collaborative and transparent process, from briefing to delivery.',
-        'p1-tag':'Briefing','p1-h4':'We understand your project',
-        'p1-p':'You tell us everything about the development: typology, target audience, differentiators, and desired visual tone.','p1-note':'100% online',
-        'p2-tag':'Proposal','p2-h4':'We define scope and timeline',
-        'p2-p':'We present a detailed quote with all deliverables, timelines, and payment options.','p2-note':'No surprises',
-        'p3-tag':'Modeling','p3-h4':'We build in 3D',
-        'p3-p':'Our team models the project with technical precision, creating the foundation for the final renders.',
-        'p4-tag':'Approval','p4-h4':'You review and approve',
-        'p4-p':'We present a preview for your approval, ensuring the final result exceeds your expectations.','p4-note':'Unlimited revisions',
-        'p5-tag':'Production','p5-h4':'We render with quality',
-        'p5-p':'With approval in hand, we start producing the final images in high resolution.','p5-note':'High resolution',
-        'p6-tag':'Delivery','p6-h4':'You receive the final files',
-        'p6-p':'We deliver all files in professional format, ready for use in sales and marketing material.',
-        'pp-label':'Our commitment','pp-quote':'"Quality that speaks for itself."',
-        'pp-p1a':'Every project receives exclusive dedication.','pp-p1b':'You are not just a client, you are the project.',
-        'pp-p2a':'We value excellence in every detail and a close relationship at every stage.','pp-p2b':'Your launch\'s success is our success.',
-        'dif-label':'Differentiators',
-        'dif-title':'Why choose <span class="gold">Studio Figueiredo</span>',
-        'dif-quote':'"We don\'t just deliver images. We deliver confidence to the buyer and results to the developer."',
-        'dif-sub':'Three reasons that set us apart in the 3D visualization market.',
-        'd1-h4':'Real Estate Specialization','d1-desc':'We are not a generic studio. Our expertise is exclusively in the real estate market, understanding its needs and language.','d1-ben':'Images buyers understand',
-        'd2-h4':'Transparent Process','d2-desc':'From proposal to delivery, you know exactly what to expect. Met deadlines, unlimited revisions, and direct communication with the project team.','d2-ben':'Peace of mind from start to finish',
-        'd3-h4':'Results Focus','d3-desc':'Every image is designed to convert. We study real estate buyer psychology to create visualizations that generate desire and accelerate sales.','d3-ben':'More sales, less time on market',
-        'sobre-label':'About','sobre-s1':'Studio Figueiredo','sobre-s2':'3D Visualization Specialists',
-        'sobre-role':'Founder and Creative Director',
-        'sobre-bio':'With years of experience in the Brazilian real estate market, Studio Figueiredo was born from the belief that 3D visualizations can transform how people connect with a property. Every project is developed with artistic care and technical precision, always focused on the client\'s result.',
-        'c1a':'+100','c1b':'Projects delivered','c2a':'+5 years','c2b':'of experience','c3a':'100%','c3b':'Satisfied clients',
-        'faq-label':'FAQ',
-        'faq-title':'Frequently <span class="gold">asked questions</span>',
-        'q1-q':'How long does a rendering take?','q1-a':'The timeline varies depending on project complexity and number of images. On average, we deliver in 7 to 15 business days. Urgent projects can be accommodated upon request.',
-        'q2-q':'Do you work with any type of project?','q2-a':'Our specialty is the real estate market: residential, commercial, land developments, and high-end projects. We also work with architects and construction companies.',
-        'q3-q':'What do I need to provide to get started?','q3-a':'We need the project files: floor plans, elevations, and any visual references. The more information, the more accurate the result.',
-        'q4-q':'How many revisions are included?','q4-a':'All necessary revisions are included. We work until you are 100% satisfied with the result.',
-        'q5-q':'How does payment work?','q5-a':'We work with 50% upfront and 50% on final delivery. We accept bank transfer and Pix. For larger projects, we can split into up to 3 installments.',
-        'q6-q':'Do you serve all of Brazil?','q6-a':'Yes, we serve clients throughout Brazil. The entire process is done 100% digitally, with video conference meetings and file delivery via secure link.',
-        'q7-q':'What if I don\'t have all the project files?','q7-a':'No problem. We work with what you have and guide you on what else might help. In many cases, we can start from basic floor plans or similar references.',
-        'ct-label':'Contact',
-        'ct-title':'Let\'s create something <span class="gold">incredible together</span>',
-        'ct-sub':'Get in touch and receive a personalized quote for your project.',
-        'ct-wa':'Prefer WhatsApp?','ct-or':'or fill out the form',
-        'f-nome':'Name','f-nome-ph':'Your full name',
-        'f-empresa':'Company (optional)','f-empresa-ph':'Your company name',
-        'f-email':'E-mail','f-tipo':'Project type','f-sel':'Select an option',
-        'f-lancamento':'Real estate launch','f-outro':'Other',
-        'f-msg':'Message','f-msg-ph':'Tell us about your project',
-        'f-send':'Send via WhatsApp',
-        'ft-tagline':'3D visualizations that transform projects into results.',
-        'ft-nav':'Navigation','ft-inv':'Investor Imagery',
-        'ft-copy':'© 2026 Studio Figueiredo. All rights reserved.',
-      }
-    };
-
-    function setLang(lang) {
-      if (!T[lang]) return;
-      const d = T[lang];
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const k = el.getAttribute('data-i18n');
-        if (d[k] !== undefined) el.textContent = d[k];
-      });
-      document.querySelectorAll('[data-i18n-html]').forEach(el => {
-        const k = el.getAttribute('data-i18n-html');
-        if (d[k] !== undefined) el.innerHTML = d[k];
-      });
-      document.querySelectorAll('[data-i18n-ph]').forEach(el => {
-        const k = el.getAttribute('data-i18n-ph');
-        if (d[k] !== undefined) el.placeholder = d[k];
-      });
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('lang-active', btn.dataset.lang === lang);
-      });
-      document.documentElement.lang = lang;
-      localStorage.setItem('sf-lang', lang);
-    }
-
-    (function () {
-      const saved = localStorage.getItem('sf-lang');
-      if (saved && T[saved]) setLang(saved);
-    })();
 
     // Form → WhatsApp
     function submitForm(e) {
