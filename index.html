@@ -202,18 +202,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .nav-phone:hover { color: var(--gold); }
   .nav-phone svg { flex-shrink: 0; }
 
-  .lang-switcher { display: flex; align-items: center; gap: 2px; }
+  .lang-switcher { display: flex; align-items: center; gap: 6px; }
   .lang-btn {
     background: none; border: none; cursor: pointer;
-    font-size: 0.68rem; font-weight: 600; letter-spacing: .04em;
-    color: rgba(255,255,255,0.32); padding: 3px 6px;
-    transition: color .2s; font-family: inherit; line-height: 1;
-    display: flex; align-items: center; gap: 4px;
+    padding: 0; line-height: 0;
+    opacity: 0.38; border-radius: 3px;
+    transition: opacity .2s, transform .15s;
   }
-  .lang-btn .flag { font-size: 1rem; line-height: 1; }
-  .lang-btn:hover { color: rgba(255,255,255,0.65); }
-  .lang-btn.lang-active { color: var(--gold); }
-  .lang-sep { color: rgba(255,255,255,0.12); font-size: 0.5rem; user-select: none; }
+  .lang-btn svg { display: block; width: 28px; height: 20px; border-radius: 3px; }
+  .lang-btn:hover { opacity: 0.75; transform: scale(1.1); }
+  .lang-btn.lang-active { opacity: 1; outline: 2px solid var(--gold); outline-offset: 2px; }
+  .lang-sep { display: none; }
 
   .hamburger {
     display: none;
@@ -1852,11 +1851,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           (14) 99151-5454
         </a>
         <div class="lang-switcher">
-          <button class="lang-btn lang-active" data-lang="pt" onclick="setLang('pt')"><span class="flag">🇧🇷</span> PT</button>
-          <span class="lang-sep">·</span>
-          <button class="lang-btn" data-lang="es" onclick="setLang('es')"><span class="flag">🇪🇸</span> ES</button>
-          <span class="lang-sep">·</span>
-          <button class="lang-btn" data-lang="en" onclick="setLang('en')"><span class="flag">🇺🇸</span> EN</button>
+          <button class="lang-btn lang-active" data-lang="pt" onclick="setLang('pt')" title="Português (Brasil)">
+            <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="28" height="20" fill="#009C3B"/>
+              <polygon points="14,1.5 26.5,10 14,18.5 1.5,10" fill="#FFDF00"/>
+              <circle cx="14" cy="10" r="5.5" fill="#002776"/>
+              <path d="M9,13 Q14,10.5 19,8" stroke="white" stroke-width="1.2" fill="none"/>
+            </svg>
+          </button>
+          <button class="lang-btn" data-lang="es" onclick="setLang('es')" title="Español">
+            <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="28" height="20" fill="#AA151B"/>
+              <rect y="5" width="28" height="10" fill="#F1BF00"/>
+            </svg>
+          </button>
+          <button class="lang-btn" data-lang="en" onclick="setLang('en')" title="English (US)">
+            <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="28" height="20" fill="#B22234"/>
+              <rect y="1.54" width="28" height="1.54" fill="white"/>
+              <rect y="4.61" width="28" height="1.54" fill="white"/>
+              <rect y="7.69" width="28" height="1.54" fill="white"/>
+              <rect y="10.77" width="28" height="1.54" fill="white"/>
+              <rect y="13.84" width="28" height="1.54" fill="white"/>
+              <rect y="16.92" width="28" height="1.54" fill="white"/>
+              <rect width="11" height="10.77" fill="#3C3B6E"/>
+            </svg>
+          </button>
         </div>
         <a href="#contato" class="nav-cta" data-i18n="nav-cta">Solicitar orçamento</a>
         <div class="hamburger" id="hamburger">
@@ -1882,12 +1902,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.09 1.509 5.813L.057 23.625a.75.75 0 0 0 .918.918l5.812-1.452A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 0 1-4.966-1.361l-.356-.212-3.695.922.937-3.616-.232-.373A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
         <span data-i18n="wa-falar">Falar pelo WhatsApp</span>
       </a>
-      <div class="lang-switcher" style="justify-content:center;margin-top:1rem;gap:6px">
-        <button class="lang-btn lang-active" data-lang="pt" onclick="setLang('pt')" style="font-size:0.78rem;padding:5px 10px"><span class="flag" style="font-size:1.2rem">🇧🇷</span> PT</button>
-        <span class="lang-sep" style="font-size:0.65rem">·</span>
-        <button class="lang-btn" data-lang="es" onclick="setLang('es')" style="font-size:0.78rem;padding:5px 10px"><span class="flag" style="font-size:1.2rem">🇪🇸</span> ES</button>
-        <span class="lang-sep" style="font-size:0.65rem">·</span>
-        <button class="lang-btn" data-lang="en" onclick="setLang('en')" style="font-size:0.78rem;padding:5px 10px"><span class="flag" style="font-size:1.2rem">🇺🇸</span> EN</button>
+      <div class="lang-switcher" style="justify-content:center;margin-top:1.25rem;gap:14px">
+        <button class="lang-btn lang-active" data-lang="pt" onclick="setLang('pt')" title="Português (Brasil)">
+          <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:42px;height:30px;border-radius:4px">
+            <rect width="28" height="20" fill="#009C3B"/>
+            <polygon points="14,1.5 26.5,10 14,18.5 1.5,10" fill="#FFDF00"/>
+            <circle cx="14" cy="10" r="5.5" fill="#002776"/>
+            <path d="M9,13 Q14,10.5 19,8" stroke="white" stroke-width="1.2" fill="none"/>
+          </svg>
+        </button>
+        <button class="lang-btn" data-lang="es" onclick="setLang('es')" title="Español">
+          <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:42px;height:30px;border-radius:4px">
+            <rect width="28" height="20" fill="#AA151B"/>
+            <rect y="5" width="28" height="10" fill="#F1BF00"/>
+          </svg>
+        </button>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')" title="English (US)">
+          <svg viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:42px;height:30px;border-radius:4px">
+            <rect width="28" height="20" fill="#B22234"/>
+            <rect y="1.54" width="28" height="1.54" fill="white"/>
+            <rect y="4.61" width="28" height="1.54" fill="white"/>
+            <rect y="7.69" width="28" height="1.54" fill="white"/>
+            <rect y="10.77" width="28" height="1.54" fill="white"/>
+            <rect y="13.84" width="28" height="1.54" fill="white"/>
+            <rect y="16.92" width="28" height="1.54" fill="white"/>
+            <rect width="11" height="10.77" fill="#3C3B6E"/>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
